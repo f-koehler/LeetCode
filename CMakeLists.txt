@@ -10,13 +10,13 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Werror -Wpedantic")
 
 add_executable(LeetCode main.cpp
-    000/001_two_sum.cpp
-    000/002_add_two_numbers.cpp
-    000/009_palindrome_number.cpp
-    000/021_merge_two_sorted_lists.cpp
-    000/088_merge_sorted_array.cpp
-    200/206_reverse_linked_list.cpp
-    800/876_middle_of_the_linked_list.cpp
+    0000/0001_two_sum.cpp
+    0000/0002_add_two_numbers.cpp
+    0000/0009_palindrome_number.cpp
+    0000/0021_merge_two_sorted_lists.cpp
+    0000/0088_merge_sorted_array.cpp
+    0200/0206_reverse_linked_list.cpp
+    0800/0876_middle_of_the_linked_list.cpp
 )
 target_link_libraries(LeetCode PRIVATE Catch2::Catch2WithMain)
 
