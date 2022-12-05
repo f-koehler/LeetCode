@@ -11,6 +11,8 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Werror -Wpedantic")
 
 add_executable(LeetCode main.cpp
     000/001_two_sum.cpp
+    000/002_add_two_numbers.cpp
+    000/009_palindrome_number.cpp
     000/021_merge_two_sorted_lists.cpp
     000/088_merge_sorted_array.cpp
     200/206_reverse_linked_list.cpp
