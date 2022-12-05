@@ -32,7 +32,7 @@ class Solution {
     }
 };
 
-TEST_CASE("Reverse Linked List", "[Reverse Linked List]") {
+TEST_CASE("0206 - Reverse Linked List", "[Reverse Linked List]") {
     SECTION("Example 1") {
         Solution s;
 

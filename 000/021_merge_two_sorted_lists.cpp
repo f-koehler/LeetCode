@@ -56,7 +56,7 @@ class Solution {
     }
 };
 
-TEST_CASE("Merge Two Sorted Lists", "[Linked List][Recursion]") {
+TEST_CASE("0021 - Merge Two Sorted Lists", "[Linked List][Recursion]") {
     SECTION("Example 1") {
         Solution s;
 

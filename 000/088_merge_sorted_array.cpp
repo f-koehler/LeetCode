@@ -30,7 +30,7 @@ class Solution {
     }
 };
 
-TEST_CASE("Merge Sorted Array", "[Arrays][Two Pointers][Sorting]") {
+TEST_CASE("0088 - Merge Sorted Array", "[Arrays][Two Pointers][Sorting]") {
     SECTION("Example 1") {
         Solution s;
         vector<int> nums1 = {1, 2, 3, 0, 0, 0};
