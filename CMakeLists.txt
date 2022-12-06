@@ -7,7 +7,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Werror -Wpedantic")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Wpedantic")
 
 add_executable(LeetCode main.cpp
     0000/0001_two_sum.cpp
@@ -15,7 +15,9 @@ add_executable(LeetCode main.cpp
     0000/0009_palindrome_number.cpp
     0000/0021_merge_two_sorted_lists.cpp
     0000/0088_merge_sorted_array.cpp
+    0100/0118_pascals_triangle.cpp
     0200/0206_reverse_linked_list.cpp
+    0500/0566_reshape_the_matrix.cpp
     0800/0876_middle_of_the_linked_list.cpp
 )
 target_link_libraries(LeetCode PRIVATE Catch2::Catch2WithMain)
