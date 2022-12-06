@@ -18,6 +18,7 @@ add_executable(LeetCode main.cpp
     0000/0088_merge_sorted_array.cpp
     0100/0118_pascals_triangle.cpp
     0200/0206_reverse_linked_list.cpp
+    0500/0557_reverse_words_in_a_string_iii.cpp
     0500/0566_reshape_the_matrix.cpp
     0800/0876_middle_of_the_linked_list.cpp
     1900/1929_concatenation_of_array.cpp
