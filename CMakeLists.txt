@@ -21,6 +21,7 @@ add_executable(LeetCode main.cpp
     0500/0566_reshape_the_matrix.cpp
     0800/0876_middle_of_the_linked_list.cpp
     1900/1929_concatenation_of_array.cpp
+    2400/2469_convert_the_temperature.cpp
 )
 target_link_libraries(LeetCode PRIVATE Catch2::Catch2WithMain)
 
