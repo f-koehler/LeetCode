@@ -23,7 +23,7 @@ class Solution {
     }
 };
 
-TEST_CASE("0557 - Reverse Words in a String III") {
+TEST_CASE("0557 - Reverse Words in a String III", "[Two Pointers][String]") {
     Solution s;
     REQUIRE(s.reverseWords("Let's take LeetCode contest") ==
             "s'teL ekat edoCteeL tsetnoc");

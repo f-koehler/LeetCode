@@ -13,6 +13,7 @@ add_executable(LeetCode main.cpp
     0000/0001_two_sum.cpp
     0000/0002_add_two_numbers.cpp
     0000/0009_palindrome_number.cpp
+    0000/0019_remove_nth_node_from_end_of_list.cpp
     0000/0021_merge_two_sorted_lists.cpp
     0000/0050_pow_x_n.cpp
     0000/0088_merge_sorted_array.cpp
