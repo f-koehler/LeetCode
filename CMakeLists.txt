@@ -13,11 +13,13 @@ add_executable(LeetCode main.cpp
     0000/0001_two_sum.cpp
     0000/0002_add_two_numbers.cpp
     0000/0009_palindrome_number.cpp
+    0000/0019_remove_nth_node_from_end_of_list.cpp
     0000/0021_merge_two_sorted_lists.cpp
     0000/0050_pow_x_n.cpp
     0000/0088_merge_sorted_array.cpp
     0100/0118_pascals_triangle.cpp
     0200/0206_reverse_linked_list.cpp
+    0500/0557_reverse_words_in_a_string_iii.cpp
     0500/0566_reshape_the_matrix.cpp
     0700/0733_flood_fill.cpp
     0800/0876_middle_of_the_linked_list.cpp
