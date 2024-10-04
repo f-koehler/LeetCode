@@ -28,7 +28,7 @@ class Solution {
     }
 };
 
-TEST_CASE("0876 - Middle of the Linked List", "[Linked List][Two Pointers") {
+TEST_CASE("0876 - Middle of the Linked List", "[Linked List][Two Pointers]") {
     SECTION("Example 1") {
         ListNode *head = new ListNode(1);
         head->next = new ListNode(2);
