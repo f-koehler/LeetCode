@@ -1,15 +1,22 @@
-{pkgs, ...}: {
+{pkgs, ...}: let
+  llvm = pkgs.llvmPackages_latest;
+in {
   # https://devenv.sh/basics/
   env.GREET = "devenv";
 
   # https://devenv.sh/packages/
-  packages = with pkgs; [
-    clang-tools
-    cmake-format
-    cmake-lint
-    cppcheck
-    flawfinder
-    git
+  packages = [
+    llvm.libllvm
+    llvm.libstdcxxClang
+    llvm.lldb
+    pkgs.clang-tools
+    pkgs.cmake
+    pkgs.cmake-format
+    pkgs.cmake-lint
+    pkgs.cppcheck
+    pkgs.flawfinder
+    pkgs.gdb
+    pkgs.git
   ];
 
   # https://devenv.sh/languages/
