@@ -17,9 +17,10 @@ add_executable(
   0000/0009_palindrome_number.cpp
   0000/0019_remove_nth_node_from_end_of_list.cpp
   0000/0021_merge_two_sorted_lists.cpp
+  0000/0027_remove_element.cpp
+  0000/0042_trapping_rain_water.cpp
   0000/0050_pow_x_n.cpp
   0000/0088_merge_sorted_array.cpp
-  0000/0042_trapping_rain_water.cpp
   0100/0118_pascals_triangle.cpp
   0200/0206_reverse_linked_list.cpp
   0200/0238_product_of_array_except_self.cpp
