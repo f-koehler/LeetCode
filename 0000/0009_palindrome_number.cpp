@@ -43,7 +43,12 @@ class Solution {
 };
 
 TEST_CASE("0009 - Palindrome Number", "[math]") {
+    // cppcheck-suppress knownConditionTrueFalse
     REQUIRE(Solution().isPalindrome(121) == true);
+
+    // cppcheck-suppress knownConditionTrueFalse
     REQUIRE(Solution().isPalindrome(-121) == false);
+
+    // cppcheck-suppress knownConditionTrueFalse
     REQUIRE(Solution().isPalindrome(10) == false);
 }

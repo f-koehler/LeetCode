@@ -3,7 +3,14 @@
   env.GREET = "devenv";
 
   # https://devenv.sh/packages/
-  packages = with pkgs; [git];
+  packages = with pkgs; [
+    clang-tools
+    cmake-format
+    cmake-lint
+    cppcheck
+    flawfinder
+    git
+  ];
 
   # https://devenv.sh/languages/
   languages.cplusplus.enable = true;
@@ -48,13 +55,8 @@
       types_or = ["c++" "c"];
       entry = "clang-tidy -p build --fix";
     };
-    clazy = {
-      enable = false;
-      types = ["c++"];
-      entry = "clazy-standalone -p build/compile_commands.json";
-    };
     cppcheck = {
-      enable = false;
+      enable = true;
       types = ["c++"];
       entry = ''
         cppcheck \
@@ -66,11 +68,12 @@
             --library=qt \
             --error-exitcode=1 \
             --inline-suppr \
-            --suppress=unusedStructMember
+            --suppress=unusedStructMember \
+            --suppress=ctuOneDefinitionRuleViolation
       '';
     };
     flawfinder = {
-      enable = false;
+      enable = true;
       pass_filenames = false;
       entry = "flawfinder --error-level=0 ./src";
     };

@@ -6,7 +6,7 @@ struct ListNode {
     ListNode()
         : val(0),
           next(nullptr) {}
-    ListNode(int x)
+    explicit ListNode(int x)
         : val(x),
           next(nullptr) {}
     ListNode(int x, ListNode *next)

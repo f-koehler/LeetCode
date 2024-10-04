@@ -6,7 +6,7 @@ struct ListNode {
     ListNode()
         : val(0),
           next(nullptr) {}
-    ListNode(int x)
+    explicit ListNode(int x)
         : val(x),
           next(nullptr) {}
     ListNode(int x, ListNode *next)
@@ -65,7 +65,7 @@ TEST_CASE("0206 - Reverse Linked List", "[Reverse Linked List]") {
         Solution s;
 
         ListNode *head = new ListNode(1);
-        ListNode *result = s.reverseList(head);
+        const ListNode *result = s.reverseList(head);
         REQUIRE(result->val == 1);
     }
 }

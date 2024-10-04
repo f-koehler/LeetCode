@@ -6,7 +6,7 @@ struct ListNode {
     ListNode()
         : val(0),
           next(nullptr) {}
-    ListNode(int x)
+    explicit ListNode(int x)
         : val(x),
           next(nullptr) {}
     ListNode(int x, ListNode *next)
@@ -18,12 +18,11 @@ class Solution {
   public:
     ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
         int carryover = 0;
-        int sum = 0;
         ListNode *result = new ListNode();
         ListNode *current = result;
 
         while (l1 || l2 || carryover) {
-            sum = 0;
+            int sum = 0;
             if (l1) {
                 sum += l1->val;
                 l1 = l1->next;
@@ -57,7 +56,7 @@ TEST_CASE("0002 - Add Two Numbers", "[Linked List][Math][Recursion]") {
         Solution s;
         ListNode *l1 = new ListNode(0);
         ListNode *l2 = new ListNode(0);
-        ListNode *result = s.addTwoNumbers(l1, l2);
+        const ListNode *result = s.addTwoNumbers(l1, l2);
         REQUIRE(result->val == 0);
     }
 

@@ -6,7 +6,7 @@ struct ListNode {
     ListNode()
         : val(0),
           next(nullptr) {}
-    ListNode(int x)
+    explicit ListNode(int x)
         : val(x),
           next(nullptr) {}
     ListNode(int x, ListNode *next)
@@ -56,12 +56,12 @@ TEST_CASE("0019 - Remove Nth Node From End of List",
     }
     SECTION("Example 2") {
         ListNode *head = new ListNode(1);
-        ListNode *result = s.removeNthFromEnd(head, 1);
+        const ListNode *result = s.removeNthFromEnd(head, 1);
         REQUIRE(result == nullptr);
     }
     SECTION("Example 3") {
         ListNode *head = new ListNode(1, new ListNode(2));
-        ListNode *result = s.removeNthFromEnd(head, 1);
+        const ListNode *result = s.removeNthFromEnd(head, 1);
         REQUIRE(result->val == 1);
         REQUIRE(result->next == nullptr);
     }
