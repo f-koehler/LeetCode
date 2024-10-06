@@ -26,6 +26,7 @@ add_executable(
   0200/0206_reverse_linked_list.cpp
   0200/0238_product_of_array_except_self.cpp
   0200/0258_add_digits.cpp
+  0500/0506_relative_ranks.cpp
   0500/0557_reverse_words_in_a_string_iii.cpp
   0500/0566_reshape_the_matrix.cpp
   0700/0733_flood_fill.cpp
