@@ -30,6 +30,7 @@ add_executable(
   0500/0506_relative_ranks.cpp
   0500/0557_reverse_words_in_a_string_iii.cpp
   0500/0566_reshape_the_matrix.cpp
+  0600/643_maximum_average_subarray_i.cpp
   0700/0733_flood_fill.cpp
   0800/0876_middle_of_the_linked_list.cpp
   1000/1071_greatest_common_divisor_of_strings.cpp
