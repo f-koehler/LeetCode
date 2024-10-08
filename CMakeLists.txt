@@ -32,6 +32,7 @@ add_executable(
   0500/0566_reshape_the_matrix.cpp
   0600/643_maximum_average_subarray_i.cpp
   0700/0733_flood_fill.cpp
+  0700/0735_asteroid_collision.cpp
   0800/0876_middle_of_the_linked_list.cpp
   1000/1071_greatest_common_divisor_of_strings.cpp
   1700/1768_merge_string_alternately.cpp
