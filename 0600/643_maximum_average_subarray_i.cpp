@@ -21,7 +21,7 @@ class Solution {
     }
 };
 
-TEST_CASE("643 - Maximum Average Subarray I", "[Array][Sliding Window]") {
+TEST_CASE("0643 - Maximum Average Subarray I", "[Array][Sliding Window]") {
     Solution s;
     SECTION("Example 1") {
         REQUIRE_THAT(

@@ -51,7 +51,7 @@ class Solution {
     }
 };
 
-TEST_CASE("735 - Asteroid Collision", "[Array][Stack][Simulation]") {
+TEST_CASE("0735 - Asteroid Collision", "[Array][Stack][Simulation]") {
     Solution s;
     SECTION("Example 1") {
         REQUIRE(s.asteroidCollision(std::vector<int>{5, 10, -5}) ==

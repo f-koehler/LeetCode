@@ -50,7 +50,7 @@ class Solution {
     }
 };
 
-TEST_CASE("345 - Reverse Vowels of a String", "[Two Pointers][String]") {
+TEST_CASE("0345 - Reverse Vowels of a String", "[Two Pointers][String]") {
     Solution s;
     SECTION("Example 1") { REQUIRE(s.reverseVowels("IceCreAm") == "AceCreIm"); }
     SECTION("Example 2") { REQUIRE(s.reverseVowels("leetcode") == "leotcede"); }

@@ -34,7 +34,7 @@ class Solution {
     }
 };
 
-TEST_CASE("605 - Can Place Flowers", "[Array][Greedy]") {
+TEST_CASE("0605 - Can Place Flowers", "[Array][Greedy]") {
     Solution s;
     SECTION("Example 1") {
         std::vector<int> flowerbed{1, 0, 0, 0, 1};

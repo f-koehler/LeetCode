@@ -28,7 +28,7 @@ class Solution {
     }
 };
 
-TEST_CASE("724 - Find Pivot Index", "[Array][Prefix Sum]") {
+TEST_CASE("0724 - Find Pivot Index", "[Array][Prefix Sum]") {
     Solution s;
     SECTION("Example 1") {
         REQUIRE(s.pivotIndex(std::vector<int>{1, 7, 3, 6, 5, 6}) == 3);
