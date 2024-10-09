@@ -37,6 +37,7 @@ add_executable(
   0700/0724_find_pivot_index.cpp
   0700/0733_flood_fill.cpp
   0700/0735_asteroid_collision.cpp
+  0800/0872_leaf_similar_trees.cpp
   0800/0876_middle_of_the_linked_list.cpp
   1000/1071_greatest_common_divisor_of_strings.cpp
   1400/1431_kids_with_the_greatest_number_of_candies.cpp
