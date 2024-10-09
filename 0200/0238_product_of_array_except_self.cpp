@@ -25,7 +25,7 @@ class Solution {
     }
 };
 
-TEST_CASE("206 - Product of Array Except Self", "[Array][Prefix Sum]") {
+TEST_CASE("0238 - Product of Array Except Self", "[Array][Prefix Sum]") {
     Solution s;
     SECTION("Example 1") {
         REQUIRE(s.productExceptSelf({1, 2, 3, 4}) ==
