@@ -21,7 +21,7 @@ class Solution {
         ListNode *current = head;
         ListNode *tmp = nullptr;
 
-        while (current) {
+        while (current != nullptr) {
             tmp = current->next;
             current->next = previous;
             previous = current;
@@ -32,7 +32,7 @@ class Solution {
     }
 };
 
-TEST_CASE("0206 - Reverse Linked List", "[Reverse Linked List]") {
+TEST_CASE("0206 - Reverse Linked List", "[Linked List][Recursion]") {
     SECTION("Example 1") {
         Solution s;
 
