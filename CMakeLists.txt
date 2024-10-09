@@ -38,6 +38,7 @@ add_executable(
   0800/0876_middle_of_the_linked_list.cpp
   1000/1071_greatest_common_divisor_of_strings.cpp
   1400/1431_kids_with_the_greatest_number_of_candies.cpp
+  1700/1732_find_the_highest_altitude.cpp
   1700/1768_merge_string_alternately.cpp
   1900/1929_concatenation_of_array.cpp
   2400/2469_convert_the_temperature.cpp)
