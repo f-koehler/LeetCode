@@ -24,6 +24,7 @@ add_executable(
   0000/0088_merge_sorted_array.cpp
   0100/0104_maximum_depth_of_binary_tree.cpp
   0100/0118_pascals_triangle.cpp
+  0100/0136_single_number.cpp
   0200/0206_reverse_linked_list.cpp
   0200/0238_product_of_array_except_self.cpp
   0200/0258_add_digits.cpp
