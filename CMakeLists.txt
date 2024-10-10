@@ -39,6 +39,7 @@ add_executable(
   0700/0735_asteroid_collision.cpp
   0800/0872_leaf_similar_trees.cpp
   0800/0876_middle_of_the_linked_list.cpp
+  0900/0933_number_of_recent_calls.cpp
   1000/1071_greatest_common_divisor_of_strings.cpp
   1400/1431_kids_with_the_greatest_number_of_candies.cpp
   1700/1732_find_the_highest_altitude.cpp
