@@ -9,7 +9,7 @@ in {
     llvm.libllvm
     llvm.libstdcxxClang
     llvm.lldb
-    pkgs.clang-tools
+    (pkgs.clang-tools.override {enableLibcxx = true;})
     pkgs.cmake
     pkgs.cmake-format
     pkgs.cmake-lint
@@ -20,7 +20,13 @@ in {
   ];
 
   # https://devenv.sh/languages/
-  languages.cplusplus.enable = true;
+  languages = {
+    cplusplus.enable = true;
+    python = {
+      enable = true;
+      uv.enable = true;
+    };
+  };
 
   # https://devenv.sh/processes/
   # processes.cargo-watch.exec = "cargo-watch";
