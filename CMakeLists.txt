@@ -32,6 +32,7 @@ add_executable(
   0200/0283_move_zeroes.cpp
   0300/0338_counting_bits.cpp
   0300/0345_reverse_vowels_of_a_string.cpp
+  0400/0443_string_compression.cpp
   0500/0506_relative_ranks.cpp
   0500/0557_reverse_words_in_a_string_iii.cpp
   0500/0566_reshape_the_matrix.cpp
