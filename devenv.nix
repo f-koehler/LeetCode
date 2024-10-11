@@ -103,6 +103,9 @@ in {
       entry = "cmake-lint -c .cmake.yaml";
     };
 
+    # Python
+    ruff.enable = true;
+
     # nix
     alejandra.enable = true;
     deadnix.enable = true;
