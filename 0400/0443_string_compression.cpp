@@ -19,9 +19,9 @@ class Solution {
                 ++current;
             }
 
-            // increment new length: there must be at least one character in the
-            // group
-            ++destination;
+            // Put correct letter at ouput position. Increment destination as
+            // each group has at least one letter.
+            characters[destination++] = character;
 
             if (group_length > 1) {
                 // More than one character in the group -> write group length
@@ -56,5 +56,10 @@ TEST_CASE("0443 - String Compression", "[Two Pointers][String]") {
                                    'b', 'b', 'b', 'b', 'b', 'b'};
         REQUIRE(s.compress(input) == 4);
         REQUIRE(input == std::vector<char>{'a', 'b', '1', '2'});
+    }
+    SECTION("Example 4") {
+        std::vector<char> input = {'a', 'a', 'a', 'b', 'b', 'a', 'a'};
+        REQUIRE(s.compress(input) == 6);
+        REQUIRE(input == std::vector<char>{'a', '3', 'b', '2', 'a', '2'});
     }
 }

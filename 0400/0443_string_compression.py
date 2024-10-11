@@ -36,3 +36,7 @@ def test_0443_string_compression():
     chars = ["a", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b"]
     assert s.compress(chars) == 4
     assert chars == ["a", "b", "1", "2"]
+
+    chars = ["a", "a", "a", "b", "b", "a", "a"]
+    assert s.compress(chars) == 6
+    assert chars == ["a", "3", "b", "2", "a", "2"]
