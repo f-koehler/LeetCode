@@ -13,6 +13,7 @@ class Solution:
                 curr += 1
                 group_length += 1
 
+            chars[dest] = c
             dest += 1
 
             if group_length > 1:
