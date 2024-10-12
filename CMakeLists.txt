@@ -30,7 +30,6 @@ add_executable(
   0200/0238_product_of_array_except_self.cpp
   0200/0258_add_digits.cpp
   0200/0283_move_zeroes.cpp
-  0300/0338_counting_bits.cpp
   0300/0345_reverse_vowels_of_a_string.cpp
   0400/0443_string_compression.cpp
   0500/0506_relative_ranks.cpp
@@ -49,6 +48,7 @@ add_executable(
   1700/1732_find_the_highest_altitude.cpp
   1700/1768_merge_string_alternately.cpp
   1900/1929_concatenation_of_array.cpp
+  2200/2215_find_the_difference_of_two_arrays.cpp
   2400/2469_convert_the_temperature.cpp)
 target_link_libraries(LeetCode PRIVATE Catch2::Catch2WithMain)
 
