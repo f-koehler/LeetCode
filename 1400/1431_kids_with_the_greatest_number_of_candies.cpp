@@ -20,7 +20,7 @@ class Solution {
     }
 };
 
-TEST_CASE("1431. Kids With the Greatest Number of Candies", "[Array]") {
+TEST_CASE("1431 - Kids With the Greatest Number of Candies", "[Array]") {
     Solution s;
     SECTION("Example 1") {
         REQUIRE(s.kidsWithCandies(std::vector<int>{2, 3, 5, 1, 3}, 3) ==
