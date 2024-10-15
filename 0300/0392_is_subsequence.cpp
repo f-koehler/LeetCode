@@ -5,12 +5,12 @@
 #include <unordered_map>
 
 /*
- * This class is for the follow-up questions, i.e. how to handle a lot of checks
+ * This class is for the follow-up question, i.e. how to handle a lot of checks
  * against a single t. The idea is to build a lookup table of positions for each
- * character. Since, we will have a single lookup table per character we can
- * store them in an unordered map for efficient lookup. The lookup table for
- * each character is then a std::set (i.e. ordered). This allows us to check for
- * an occurence of a character after the current index in the t string in
+ * character. Since we will have a single lookup table per character we can
+ * store them in an unordered map for efficient lookup O(1). The lookup table
+ * for each character is then a std::set (i.e. ordered). This allows us to check
+ * for an occurence of a character after the current index in the t string in
  * O(log(n)).
  */
 class IsSubsequenceCache {
@@ -24,8 +24,9 @@ class IsSubsequenceCache {
             const char c = t[i];
             if (auto pos = m_positions.find(c); pos != m_positions.end()) {
                 // we already have a position set for character under
-                // consideration -> insert it
-                pos->second.insert(i);
+                // consideration -> insert it using end() as a hint since the
+                // new index should be the largest one
+                pos->second.insert(i, pos->second.end());
                 continue;
             }
 
