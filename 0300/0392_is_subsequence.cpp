@@ -26,7 +26,7 @@ class IsSubsequenceCache {
                 // we already have a position set for character under
                 // consideration -> insert it using end() as a hint since the
                 // new index should be the largest one
-                pos->second.insert(i, pos->second.end());
+                pos->second.insert(pos->second.end(), i);
                 continue;
             }
 
