@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.12)
 project(LeetCode CXX)
 
-add_subdirectory(Catch2)
+find_package(Catch2 REQUIRED)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_CXX_STANDARD 20)

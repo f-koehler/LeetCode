@@ -15,8 +15,9 @@ in {
     pkgs.cmake-lint
     pkgs.cppcheck
     pkgs.flawfinder
-    pkgs.gdb
+    # pkgs.gdb
     pkgs.git
+    pkgs.conan
   ];
 
   # https://devenv.sh/languages/
