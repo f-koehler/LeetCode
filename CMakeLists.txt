@@ -30,6 +30,7 @@ add_executable(
   0200/0238_product_of_array_except_self.cpp
   0200/0258_add_digits.cpp
   0200/0283_move_zeroes.cpp
+  0300/0338_counting_bits.cpp
   0300/0345_reverse_vowels_of_a_string.cpp
   0300/0392_is_subsequence.cpp
   0400/0443_string_compression.cpp
@@ -46,6 +47,7 @@ add_executable(
   0900/0933_number_of_recent_calls.cpp
   1000/1071_greatest_common_divisor_of_strings.cpp
   1100/1137_nth_tribonacci_number.cpp
+  1300/1318_minimum_flips_to_make_a_or_b_equal_to_c.cpp
   1400/1431_kids_with_the_greatest_number_of_candies.cpp
   1700/1732_find_the_highest_altitude.cpp
   1700/1768_merge_string_alternately.cpp
