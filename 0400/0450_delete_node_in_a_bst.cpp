@@ -1,23 +1,5 @@
+#include "tree.hpp"
 #include <catch2/catch_test_macros.hpp>
-#include <memory>
-
-struct TreeNode {
-    int val;
-    TreeNode *left;
-    TreeNode *right;
-    TreeNode()
-        : val(0),
-          left(nullptr),
-          right(nullptr) {}
-    explicit TreeNode(int x)
-        : val(x),
-          left(nullptr),
-          right(nullptr) {}
-    TreeNode(int x, TreeNode *left, TreeNode *right)
-        : val(x),
-          left(left),
-          right(right) {}
-};
 
 class Solution {
   public:
@@ -80,51 +62,23 @@ TEST_CASE("0450 - Delete Node in a BST",
     Solution s;
 
     SECTION("Example 1") {
-        auto node_3_1 = std::make_unique<TreeNode>(2),
-             node_3_2 = std::make_unique<TreeNode>(4),
-             node_3_4 = std::make_unique<TreeNode>(7),
-             node_2_1 =
-                 std::make_unique<TreeNode>(3, node_3_1.get(), node_3_2.get()),
-             node_2_2 = std::make_unique<TreeNode>(6, nullptr, node_3_4.get()),
-             tree =
-                 std::make_unique<TreeNode>(5, node_2_1.get(), node_2_2.get());
-        s.deleteNode(tree.get(), 3);
-        REQUIRE(tree->val == 5);
-        REQUIRE(tree->left != nullptr);
-        REQUIRE(tree->right != nullptr);
-        REQUIRE(tree->left->val == 4);
-        REQUIRE(tree->left->left != nullptr);
-        REQUIRE(tree->left->left->val == 2);
-        REQUIRE(tree->left->right == nullptr);
-        REQUIRE(tree->right != nullptr);
-        REQUIRE(tree->right->val == 6);
-        REQUIRE(tree->right->left == nullptr);
-        REQUIRE(tree->right->right != nullptr);
-        REQUIRE(tree->right->right->val == 7);
+        BinaryTree tree(5);
+        tree << 3 << 6 << 2 << 4 << nullptr << 7;
+        s.deleteNode(tree.get_root(), 3);
+
+        BinaryTree expected(5);
+        expected << 4 << 6 << 2 << nullptr << nullptr << 7;
+
+        REQUIRE(tree == expected);
     }
     SECTION("Example 2") {
-        auto node_3_1 = std::make_unique<TreeNode>(2),
-             node_3_2 = std::make_unique<TreeNode>(4),
-             node_3_4 = std::make_unique<TreeNode>(7),
-             node_2_1 =
-                 std::make_unique<TreeNode>(3, node_3_1.get(), node_3_2.get()),
-             node_2_2 = std::make_unique<TreeNode>(6, nullptr, node_3_4.get()),
-             tree =
-                 std::make_unique<TreeNode>(5, node_2_1.get(), node_2_2.get());
-        s.deleteNode(tree.get(), 0);
-        REQUIRE(tree->val == 5);
-        REQUIRE(tree->left != nullptr);
-        REQUIRE(tree->right != nullptr);
-        REQUIRE(tree->left->val == 3);
-        REQUIRE(tree->left->left != nullptr);
-        REQUIRE(tree->left->left->val == 2);
-        REQUIRE(tree->left->right != nullptr);
-        REQUIRE(tree->left->right->val == 4);
-        REQUIRE(tree->right != nullptr);
-        REQUIRE(tree->right->val == 6);
-        REQUIRE(tree->right->left == nullptr);
-        REQUIRE(tree->right->right != nullptr);
-        REQUIRE(tree->right->right->val == 7);
+        BinaryTree tree(5);
+        tree << 3 << 6 << 2 << 4 << nullptr << 7;
+        s.deleteNode(tree.get_root(), 0);
+
+        BinaryTree expected(5);
+        expected << 3 << 6 << 2 << 4 << nullptr << 7;
+        REQUIRE(tree == expected);
     }
     SECTION("Example 3") {
         // cppcheck-suppress knownConditionTrueFalse

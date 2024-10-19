@@ -1,23 +1,6 @@
+#include "tree.hpp"
 #include <catch2/catch_test_macros.hpp>
 #include <deque>
-
-struct TreeNode {
-    int val;
-    TreeNode *left;
-    TreeNode *right;
-    TreeNode()
-        : val(0),
-          left(nullptr),
-          right(nullptr) {}
-    explicit TreeNode(int x)
-        : val(x),
-          left(nullptr),
-          right(nullptr) {}
-    TreeNode(int x, TreeNode *left, TreeNode *right)
-        : val(x),
-          left(left),
-          right(right) {}
-};
 
 class Solution {
   public:
@@ -48,22 +31,21 @@ TEST_CASE("0872 - Leaf-Similar Trees",
           "[Tree][Depth-First Search][Binary Tree]") {
     Solution s;
     SECTION("Example 1") {
-        const TreeNode *tree1 = new TreeNode(
-            3,
-            new TreeNode(5, new TreeNode(6),
-                         new TreeNode(2, new TreeNode(7), new TreeNode(4))),
-            new TreeNode(1, new TreeNode(9), new TreeNode(8)));
-        const TreeNode *tree2 = new TreeNode(
-            3, new TreeNode(5, new TreeNode(6), new TreeNode(7)),
-            new TreeNode(1, new TreeNode(4),
-                         new TreeNode(2, new TreeNode(9), new TreeNode(8))));
-        REQUIRE(s.leafSimilar(tree1, tree2));
+        BinaryTree tree1(3);
+        tree1 << 5 << 1 << 6 << 2 << 9 << 8 << nullptr << nullptr << 7 << 4;
+
+        BinaryTree tree2(3);
+        tree2 << 5 << 1 << 6 << 7 << 4 << 2 << nullptr << nullptr << nullptr
+              << nullptr << nullptr << nullptr << 9 << 8;
+
+        REQUIRE(s.leafSimilar(tree1.get_root(), tree2.get_root()));
     }
     SECTION("Exampel 2") {
-        const TreeNode *tree1 =
-            new TreeNode(1, new TreeNode(2), new TreeNode(3));
-        const TreeNode *tree2 =
-            new TreeNode(1, new TreeNode(3), new TreeNode(2));
-        REQUIRE(!s.leafSimilar(tree1, tree2));
+        BinaryTree tree1(1);
+        tree1 << 2 << 3;
+
+        BinaryTree tree2(1);
+        tree2 << 3 << 2;
+        REQUIRE(!s.leafSimilar(tree1.get_root(), tree2.get_root()));
     }
 }
