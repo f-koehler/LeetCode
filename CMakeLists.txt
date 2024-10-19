@@ -49,6 +49,7 @@ add_executable(
   1100/1137_nth_tribonacci_number.cpp
   1300/1318_minimum_flips_to_make_a_or_b_equal_to_c.cpp
   1400/1431_kids_with_the_greatest_number_of_candies.cpp
+  0700/0700_search_in_a_binary_search_tree.cpp
   1700/1732_find_the_highest_altitude.cpp
   1700/1768_merge_string_alternately.cpp
   1900/1929_concatenation_of_array.cpp
