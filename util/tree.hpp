@@ -24,6 +24,8 @@ class BinaryTree {
     std::size_t m_next_parent = 0;
     bool m_is_next_child_left = true;
 
+    void advance_parent();
+
   public:
     explicit BinaryTree(int root_val);
     static BinaryTree from_node(TreeNode *node);

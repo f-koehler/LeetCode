@@ -1,6 +1,5 @@
 #include "tree.hpp"
 #include <catch2/catch_test_macros.hpp>
-#include <iostream>
 #include <queue>
 #include <sstream>
 #include <stack>
@@ -42,11 +41,24 @@ BinaryTree BinaryTree::from_node(TreeNode *node) {
             tree << current->val;
             nodes.push(current->left);
             nodes.push(current->right);
-            std::cout << current->val << " ";
         }
     }
-    std::cout << "\n";
     return tree;
+}
+void BinaryTree::advance_parent() {
+    if (m_is_next_child_left) {
+        m_is_next_child_left = false;
+        return;
+    }
+    m_is_next_child_left = true;
+    ++m_next_parent;
+    const std::size_t n = m_nodes.size();
+    while (m_next_parent < n) {
+        if (m_nodes[m_next_parent] != nullptr) {
+            return;
+        }
+        ++m_next_parent;
+    }
 }
 
 BinaryTree &BinaryTree::operator<<(int val) {
@@ -55,9 +67,8 @@ BinaryTree &BinaryTree::operator<<(int val) {
         m_nodes[m_next_parent]->left = m_nodes.back().get();
     } else {
         m_nodes[m_next_parent]->right = m_nodes.back().get();
-        ++m_next_parent;
     }
-    m_is_next_child_left = !m_is_next_child_left;
+    advance_parent();
     return *this;
 }
 BinaryTree &BinaryTree::operator<<(nullptr_t) {
@@ -66,9 +77,8 @@ BinaryTree &BinaryTree::operator<<(nullptr_t) {
         m_nodes[m_next_parent]->left = nullptr;
     } else {
         m_nodes[m_next_parent]->right = nullptr;
-        ++m_next_parent;
     }
-    m_is_next_child_left = !m_is_next_child_left;
+    advance_parent();
     return *this;
 }
 
