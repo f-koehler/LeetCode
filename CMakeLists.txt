@@ -24,6 +24,7 @@ add_executable(
   0000/0069_sqrt_x.cpp
   0000/0088_merge_sorted_array.cpp
   0100/0104_maximum_depth_of_binary_tree.cpp
+  0100/0112_path_sum.cpp
   0100/0118_pascals_triangle.cpp
   0100/0136_single_number.cpp
   0100/0151_reverse_words_in_a_string.cpp
