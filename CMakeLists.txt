@@ -56,6 +56,7 @@ add_executable(
   0700/0700_search_in_a_binary_search_tree.cpp
   1700/1732_find_the_highest_altitude.cpp
   1700/1768_merge_string_alternately.cpp
+  1900/1926_nearest_exit_from_entrance_in_maze.cpp
   1900/1929_concatenation_of_array.cpp
   2200/2215_find_the_difference_of_two_arrays.cpp
   2400/2469_convert_the_temperature.cpp)
