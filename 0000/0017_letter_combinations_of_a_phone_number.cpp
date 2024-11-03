@@ -58,7 +58,6 @@ class Solution {
         std::vector<std::size_t> digits_int(digits.size(), 0);
         std::transform(digits.cbegin(), digits.cend(), digits_int.begin(),
                        [](char c) { return c - '0'; });
-        std::cout << digits_int[0] << '\n';
 
         std::string current_combination;
         current_combination.reserve(length);
