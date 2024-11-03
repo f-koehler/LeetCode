@@ -2,7 +2,7 @@
   llvm = pkgs.llvmPackages_latest;
 in {
   # https://devenv.sh/basics/
-  env.GREET = "devenv";
+  env.VCPKG_ROOT = "${pkgs.vcpkg}/share/vcpkg";
 
   # https://devenv.sh/packages/
   packages = [
@@ -17,7 +17,9 @@ in {
     pkgs.flawfinder
     # pkgs.gdb
     pkgs.git
-    pkgs.conan
+    pkgs.vcpkg
+    pkgs.ninja
+    pkgs.gnumake
   ];
 
   # https://devenv.sh/languages/
@@ -26,6 +28,7 @@ in {
     python = {
       enable = true;
       uv.enable = true;
+      package = pkgs.python313Full;
     };
   };
 

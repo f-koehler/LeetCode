@@ -1,9 +1,12 @@
 {
-    "version": 4,
-    "vendor": {
-        "conan": {}
-    },
-    "include": [
-        "build/Release/generators/CMakePresets.json"
+    "version": 2,
+    "configurePresets": [
+      {
+        "name": "default",
+        "inherits": "vcpkg",
+        "environment": {
+          "VCPKG_ROOT": "$env{VCPKG_ROOT}"
+        }
+      }
     ]
-}
+  }
