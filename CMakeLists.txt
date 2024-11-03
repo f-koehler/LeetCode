@@ -33,6 +33,7 @@ add_executable(
   0200/0238_product_of_array_except_self.cpp
   0200/0258_add_digits.cpp
   0200/0283_move_zeroes.cpp
+  0300/0334_increasing_triplet_subsequence.cpp
   0300/0338_counting_bits.cpp
   0300/0345_reverse_vowels_of_a_string.cpp
   0300/0392_is_subsequence.cpp
