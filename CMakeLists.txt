@@ -44,9 +44,11 @@ add_executable(
   0500/0566_reshape_the_matrix.cpp
   0600/605_can_place_flowers.cpp
   0600/643_maximum_average_subarray_i.cpp
+  0700/0700_search_in_a_binary_search_tree.cpp
   0700/0724_find_pivot_index.cpp
   0700/0733_flood_fill.cpp
   0700/0735_asteroid_collision.cpp
+  0700/0746_min_cost_climbing_stairs.cpp
   0800/0841_keys_and_rooms.cpp
   0800/0872_leaf_similar_trees.cpp
   0800/0876_middle_of_the_linked_list.cpp
@@ -55,7 +57,6 @@ add_executable(
   1100/1137_nth_tribonacci_number.cpp
   1300/1318_minimum_flips_to_make_a_or_b_equal_to_c.cpp
   1400/1431_kids_with_the_greatest_number_of_candies.cpp
-  0700/0700_search_in_a_binary_search_tree.cpp
   1700/1732_find_the_highest_altitude.cpp
   1700/1768_merge_string_alternately.cpp
   1900/1926_nearest_exit_from_entrance_in_maze.cpp
