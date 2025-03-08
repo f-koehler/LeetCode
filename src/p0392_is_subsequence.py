@@ -1,5 +1,6 @@
 import bisect
 
+
 class Solution:
     def isSubsequence(self, s: str, t: str) -> bool:
         n_s = len(s)
@@ -11,6 +12,7 @@ class Solution:
                 i += 1
             j += 1
         return i == n_s
+
 
 # For follow-up question, see explanation in C++ code
 class CachedSolution:
@@ -36,7 +38,6 @@ class CachedSolution:
         return True
 
 
-
 def test_0392_is_subsequence():
     s = Solution()
 
@@ -46,6 +47,3 @@ def test_0392_is_subsequence():
     assert not CachedSolution("ahbgdc")("axc")
     assert not s.isSubsequence("acb", "ahbgdc")
     assert not CachedSolution("ahbgdc")("acb")
-
-
-

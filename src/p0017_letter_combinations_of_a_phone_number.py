@@ -1,7 +1,10 @@
-LETTERS_FOR_NUMBER = ["","","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"]
+LETTERS_FOR_NUMBER = ["", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"]
+
 
 class Solution:
-    def build_all_combinations(self, digits: list[int], current: str, combinations: list[str]):
+    def build_all_combinations(
+        self, digits: list[int], current: str, combinations: list[str]
+    ):
         len_digits = len(digits)
         len_current = len(current)
         if len_current >= len_digits:
@@ -27,7 +30,7 @@ def test_0017_letter_combinations_of_a_phone_number():
 
     example1 = s.letterCombinations("23")
     example1.sort()
-    assert example1 == ["ad","ae","af","bd","be","bf","cd","ce","cf"]
+    assert example1 == ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"]
 
     assert s.letterCombinations("") == []
 

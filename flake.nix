@@ -121,6 +121,7 @@
 
                   # Python
                   ruff.enable = true;
+                  ruff-format.enable = true;
 
                   # nix
                   nixfmt-rfc-style.enable = true;
