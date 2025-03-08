@@ -10,7 +10,7 @@ This project is designed to help developers efficiently fetch and start working 
 
 ## Start Working on Problem
 
-The `fetch_problem.sh` script is a utility to quickly set up the working environment for a new problem. It automates the retrieval of problem description and adds C++, Rust, and Python sources including the example test cases. To fetch a problem just call the script with the problem number:
+The [`fetch_problem.py`](./fetch_problem.py) script is a utility to quickly set up the working environment for a new problem. It automates the retrieval of problem description and adds C++, Rust, and Python sources including the example test cases. To fetch a problem just call the script with the problem number:
 
 ```bash
 ./fetch_problem.py 136
