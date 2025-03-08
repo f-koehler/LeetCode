@@ -68,7 +68,6 @@ class Problem:
 
     @staticmethod
     def from_json(slug: str, data: dict[str, Any]) -> "Problem":
-        test_cases = data["exampleTestcases"].split("\n")
         return Problem(
             id=int(data["questionId"]),
             slug=slug,
