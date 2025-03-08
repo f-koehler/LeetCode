@@ -13,5 +13,5 @@ dependencies = [
 ]
 
 [tool.pytest.ini_options]
-testpaths = ["0000", "0100", "0400", "0300", "1100", "2200"]
+testpaths = ["src"]
 python_files = "*.py"
