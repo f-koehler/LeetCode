@@ -11,24 +11,28 @@
     extra-substituters = "https://devenv.cachix.org";
   };
 
-  outputs = {
-    self,
-    nixpkgs,
-    devenv,
-    systems,
-    ...
-  } @ inputs: let
-    forEachSystem = nixpkgs.lib.genAttrs (import systems);
-  in {
-    packages = forEachSystem (system: {
-      devenv-up = self.devShells.${system}.default.config.procfileScript;
-      devenv-test = self.devShells.${system}.default.config.test;
-    });
+  outputs =
+    {
+      self,
+      nixpkgs,
+      devenv,
+      systems,
+      ...
+    }@inputs:
+    let
+      forEachSystem = nixpkgs.lib.genAttrs (import systems);
+    in
+    {
+      packages = forEachSystem (system: {
+        devenv-up = self.devShells.${system}.default.config.procfileScript;
+        devenv-test = self.devShells.${system}.default.config.test;
+      });
 
-    devShells = forEachSystem (
-      system: let
-        pkgs = nixpkgs.legacyPackages.${system};
-      in
+      devShells = forEachSystem (
+        system:
+        let
+          pkgs = nixpkgs.legacyPackages.${system};
+        in
         # llvm = pkgs.llvmPackages_latest;
         {
           default = devenv.lib.mkShell {
@@ -106,12 +110,12 @@
                   # CMake
                   cmake-format = {
                     enable = true;
-                    types = ["cmake"];
+                    types = [ "cmake" ];
                     entry = "cmake-format -c .cmake.yaml -i";
                   };
                   cmake-lint = {
                     enable = true;
-                    types = ["cmake"];
+                    types = [ "cmake" ];
                     entry = "cmake-lint -c .cmake.yaml";
                   };
 
@@ -119,16 +123,35 @@
                   ruff.enable = true;
 
                   # nix
-                  alejandra.enable = true;
+                  nixfmt-rfc-style.enable = true;
                   deadnix.enable = true;
                   flake-checker.enable = true;
                   nil.enable = true;
                   statix.enable = true;
+
+                  # toml
+                  taplo.enable = true;
+                  check-toml.enable = true;
+
+                  # rust
+                  cargo-check.enable = true;
+                  cargo-verify-project = {
+                    enable = true;
+                    pass_filenames = false;
+                    entry = "cargo verify-project --locked";
+                  };
+                  cargo-test = {
+                    enable = true;
+                    pass_filenames = false;
+                    entry = "cargo test";
+                  };
+                  clippy.enable = true;
+                  rustfmt.enable = true;
                 };
               }
             ];
           };
         }
-    );
-  };
+      );
+    };
 }
