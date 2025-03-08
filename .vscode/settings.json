@@ -1,0 +1,4 @@
+{
+    "python.testing.pytestEnabled": true,
+    "python.defaultInterpreterPath": "${workspaceFolder}/.devenv/state/venv/bin/python3"
+}
