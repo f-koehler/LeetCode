@@ -1,0 +1,15 @@
+#include <catch2/catch_test_macros.hpp>
+
+namespace P{{ problem.id | string |zfill(4) }} {
+    {{ problem.code_snippets["cpp"] }}
+
+    TEST_CASE("{{ problem.id | string | zfill(4) }} - {{ problem.title }}", "{% for tag in problem.tags %}[{{tag}}]{% endfor %}") {
+        {% for test_case in problem.test_cases %}
+        SECTION("Example {{ loop.index }}") {
+            // Input: {{ test_case[0] }}
+            // Output: {{ test_case[1] }}
+            Solution s;
+        }
+        {% endfor %}
+    }
+} // namespace P{{ problem.id | string | zfill(4) }}

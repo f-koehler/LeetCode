@@ -1,4 +1,4 @@
-struct Solution {}
+pub struct Solution {}
 
 impl Solution {
     pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
@@ -15,7 +15,7 @@ impl Solution {
 
 #[cfg(test)]
 mod tests {
-    use crate::p0001_two_sum::Solution;
+    use super::*;
 
     #[test]
     fn test_two_sum() {

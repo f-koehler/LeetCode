@@ -1,0 +1,20 @@
+
+pub struct Solution {}
+
+impl Solution {
+  {{ problem.code_snippets["rust"] }}
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_two_sum() {
+      {% for test_case in problem.test_cases %}
+      // Example {{ loop.index }}:
+      // Input: {{ test_case[0] }}
+      // Output: {{ test_case[1] }}
+      {% endfor %}
+    }
+}

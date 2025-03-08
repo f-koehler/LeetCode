@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>{{ problem.id }}. {{ problem.title }}</title>
+</head>
+
+<body>
+    <h1>{{ problem.id }}. {{ problem.title }}</h1>
+
+    <ul>
+        <li>Difficulty: {{ problem.difficulty }}</li>
+        <li>Tags: <ul style="display: inline; padding: 0;">
+                {% for tag in problem.tags %}
+                <li style="display: inline;">{{ tag }}{% if not loop.last %}, {% endif %}</li>
+                {% endfor %}
+            </ul>
+        </li>
+    </ul>
+
+    <p>
+        {{ problem.description }}
+    </p>
+</body>
+
+</html>

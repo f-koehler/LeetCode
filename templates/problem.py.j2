@@ -1,0 +1,13 @@
+{{ problem.code_snippets["python"] }}
+
+def test_{{ problem.id | string | zfill(4) }}():
+    s = Solution()
+    
+    {% for test_case in problem.test_cases %}
+    # Example {{ loop.index }}:
+    # Input: {{ test_case[0] }}
+    # Output: {{ test_case[1] }}
+    pass
+
+    {% endfor %}
+    
