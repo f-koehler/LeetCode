@@ -18,6 +18,7 @@ set(LEET_CODE_SOURCES
     src/p0566_reshape_the_matrix.cpp
     src/p0017_letter_combinations_of_a_phone_number.cpp
     src/p605_can_place_flowers.cpp
+    src/p0014_longest_common_prefix.cpp
     src/p0042_trapping_rain_water.cpp
     src/p0112_path_sum.cpp
     src/p0345_reverse_vowels_of_a_string.cpp
