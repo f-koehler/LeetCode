@@ -15,3 +15,7 @@ devenv.local.nix
 
 # python
 __pycache__/
+
+# Added by cargo
+
+/target

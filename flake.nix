@@ -60,6 +60,7 @@
                     uv.enable = true;
                     package = pkgs.python313Full;
                   };
+                  rust.enable = true;
                 };
 
                 pre-commit.hooks = {
