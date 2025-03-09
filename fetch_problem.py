@@ -139,8 +139,9 @@ def main(id: Annotated[int, typer.Argument()]):
         for problem in fetch_all_problems()["stat_status_pairs"]
         if not problem["paid_only"]
     ]
-    entry = next(filter(lambda p: p.id == id, problem_entries))
+    entry = next(filter(lambda p: p.frontend_id == id, problem_entries))
     problem = Problem.from_json(entry.slug, fetch_problem(entry.slug))
+    problem.id = entry.frontend_id
 
     env = jinja2.Environment(loader=jinja2.FileSystemLoader("templates"))
     env.filters["zfill"] = zfill_filter
