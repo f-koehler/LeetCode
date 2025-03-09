@@ -15,6 +15,7 @@ set(LEET_CODE_SOURCES
     src/p2469_convert_the_temperature.cpp
     src/p0933_number_of_recent_calls.cpp
     src/p0338_counting_bits.cpp
+    src/p1679_max_number_of_k_sum_pairs.cpp
     src/p0566_reshape_the_matrix.cpp
     src/p0017_letter_combinations_of_a_phone_number.cpp
     src/p605_can_place_flowers.cpp
