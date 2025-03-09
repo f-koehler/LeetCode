@@ -47,6 +47,7 @@ set(LEET_CODE_SOURCES
     src/p0104_maximum_depth_of_binary_tree.cpp
     src/p0283_move_zeroes.cpp
     src/p0088_merge_sorted_array.cpp
+    src/p1456_maximum_number_of_vowels_in_a_substring_of_given_length.cpp
     src/p0069_sqrt_x.cpp
     src/p0136_single_number.cpp
     src/p0746_min_cost_climbing_stairs.cpp
