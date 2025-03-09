@@ -21,6 +21,7 @@ set(LEET_CODE_SOURCES
     src/p0014_longest_common_prefix.cpp
     src/p0042_trapping_rain_water.cpp
     src/p0112_path_sum.cpp
+    src/p0011_container_with_most_water.cpp
     src/p0345_reverse_vowels_of_a_string.cpp
     src/p0735_asteroid_collision.cpp
     src/p0001_two_sum.cpp
