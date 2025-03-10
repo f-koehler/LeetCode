@@ -14,6 +14,7 @@ set(LEET_CODE_SOURCES
     src/p0019_remove_nth_node_from_end_of_list.cpp
     src/p2469_convert_the_temperature.cpp
     src/p0933_number_of_recent_calls.cpp
+    src/p1004_max_consecutive_ones_iii.cpp
     src/p0338_counting_bits.cpp
     src/p1679_max_number_of_k_sum_pairs.cpp
     src/p0566_reshape_the_matrix.cpp
