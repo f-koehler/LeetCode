@@ -1,13 +1,13 @@
 #include <catch2/catch_test_macros.hpp>
-#include <map>
 #include <stdexcept>
+#include <unordered_map>
 #include <vector>
 
 namespace P0001 {
     class Solution {
       public:
         std::vector<int> twoSum(const std::vector<int> &nums, int target) {
-            std::map<int, int> seen{{nums[0], 0}};
+            std::unordered_map<int, int> seen{{nums[0], 0}};
             for (auto it = nums.begin() + 1; it != nums.end(); ++it) {
                 const auto pos = seen.find(target - *it);
                 if (pos != seen.end()) {
