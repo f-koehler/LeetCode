@@ -46,6 +46,7 @@ set(LEET_CODE_SOURCES
     src/p0334_increasing_triplet_subsequence.cpp
     src/p0733_flood_fill.cpp
     src/p0104_maximum_depth_of_binary_tree.cpp
+    src/p0003_longest_substring_without_repeating_characters.cpp
     src/p0283_move_zeroes.cpp
     src/p0088_merge_sorted_array.cpp
     src/p1456_maximum_number_of_vowels_in_a_substring_of_given_length.cpp
