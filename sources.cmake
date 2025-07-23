@@ -29,6 +29,7 @@ set(LEET_CODE_SOURCES
     src/p2215_find_the_difference_of_two_arrays.cpp
     src/p0876_middle_of_the_linked_list.cpp
     src/p1926_nearest_exit_from_entrance_in_maze.cpp
+    src/p0766_toeplitz_matrix.cpp
     src/p0206_reverse_linked_list.cpp
     src/p0724_find_pivot_index.cpp
     src/p0003_longest_substring_without_repeating_characters.cpp
