@@ -46,6 +46,7 @@ set(LEET_CODE_SOURCES
     src/p0118_pascals_triangle.cpp
     src/p0002_add_two_numbers.cpp
     src/p1456_maximum_number_of_vowels_in_a_substring_of_given_length.cpp
+    src/p0059_spiral_matrix_ii.cpp
     src/p1004_max_consecutive_ones_iii.cpp
     src/p0338_counting_bits.cpp
     src/p0443_string_compression.cpp
