@@ -31,6 +31,7 @@ set(LEET_CODE_SOURCES
     src/p0735_asteroid_collision.cpp
     src/p0001_two_sum.cpp
     src/p0443_string_compression.cpp
+    src/p0454_4sum_ii.cpp
     src/p1318_minimum_flips_to_make_a_or_b_equal_to_c.cpp
     src/p0557_reverse_words_in_a_string_iii.cpp
     src/p1431_kids_with_the_greatest_number_of_candies.cpp
