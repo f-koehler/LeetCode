@@ -59,6 +59,7 @@ set(LEET_CODE_SOURCES
     src/p0069_sqrt_x.cpp
     src/p0136_single_number.cpp
     src/p0746_min_cost_climbing_stairs.cpp
+    src/p1010_pairs_of_songs_with_total_durations_divisible_by_60.cpp
     src/p0876_middle_of_the_linked_list.cpp
     src/p1732_find_the_highest_altitude.cpp
     src/p1768_merge_string_alternately.cpp)
