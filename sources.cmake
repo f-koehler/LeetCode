@@ -45,6 +45,7 @@ set(LEET_CODE_SOURCES
     src/p0392_is_subsequence.cpp
     src/p0841_keys_and_rooms.cpp
     src/p2215_find_the_difference_of_two_arrays.cpp
+    src/p0128_longest_consecutive_sequence.cpp
     src/p0050_pow_x_n.cpp
     src/p0334_increasing_triplet_subsequence.cpp
     src/p0733_flood_fill.cpp
