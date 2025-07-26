@@ -64,6 +64,7 @@ set(LEET_CODE_SOURCES
     src/p0923_3sum_with_multiplicity.cpp
     src/p0014_longest_common_prefix.cpp
     src/p0017_letter_combinations_of_a_phone_number.cpp
+    src/p2131_longest_palindrome_by_concatenating_two_letter_words.cpp
     src/p0021_merge_two_sorted_lists.cpp
     src/p0027_remove_element.cpp
     src/p0283_move_zeroes.cpp
