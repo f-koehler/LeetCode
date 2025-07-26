@@ -57,6 +57,7 @@ set(LEET_CODE_SOURCES
     src/p1010_pairs_of_songs_with_total_durations_divisible_by_60.cpp
     src/p1004_max_consecutive_ones_iii.cpp
     src/p0338_counting_bits.cpp
+    src/p0498_diagonal_traverse.cpp
     src/p0443_string_compression.cpp
     src/p0112_path_sum.cpp
     src/p0841_keys_and_rooms.cpp
