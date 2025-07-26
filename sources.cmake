@@ -8,6 +8,7 @@ set(LEET_CODE_SOURCES
     src/p0746_min_cost_climbing_stairs.cpp
     src/p0933_number_of_recent_calls.cpp
     src/p0151_reverse_words_in_a_string.cpp
+    src/p2373_largest_local_values_in_a_matrix.cpp
     src/p0128_longest_consecutive_sequence.cpp
     src/p0334_increasing_triplet_subsequence.cpp
     src/p643_maximum_average_subarray_i.cpp
