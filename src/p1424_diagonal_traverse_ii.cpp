@@ -1,8 +1,6 @@
 #include <catch2/catch_test_macros.hpp>
-#include <iostream>
 #include <numeric>
 #include <queue>
-#include <utility>
 #include <vector>
 
 namespace P1424 {
@@ -50,17 +48,11 @@ namespace P1424 {
                 if ((next.row + 1 < rows) && (next.col == 0)) {
                     // we can do this since rows cannot be empty
                     to_process.emplace(next.row + 1, next.col);
-                    std::cout << "Adding left child: (" << next.row + 1 << ", "
-                              << next.col << ") ("
-                              << nums[next.row + 1][next.col] << ")\n";
                 }
 
                 // add right child if possible
                 if (next.col + 1 < nums[next.row].size()) {
                     to_process.emplace(next.row, next.col + 1);
-                    std::cout << "Adding right child: (" << next.row << ", "
-                              << next.col + 1 << ") ("
-                              << nums[next.row][next.col + 1] << ")\n";
                 }
             }
 
