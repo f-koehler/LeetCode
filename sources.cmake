@@ -60,6 +60,7 @@ set(LEET_CODE_SOURCES
     src/p0498_diagonal_traverse.cpp
     src/p0443_string_compression.cpp
     src/p0112_path_sum.cpp
+    src/p0954_array_of_doubled_pairs.cpp
     src/p0841_keys_and_rooms.cpp
     src/p0923_3sum_with_multiplicity.cpp
     src/p0014_longest_common_prefix.cpp
