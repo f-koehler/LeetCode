@@ -13,8 +13,8 @@ namespace P0867 {
             std::vector<std::vector<int>> result(cols,
                                                  std::vector<int>(rows, 0));
 
-            for (std::size_t col = 0; col < cols; ++col) {
-                for (std::size_t row = 0; row < rows; ++row) {
+            for (std::size_t row = 0; row < rows; ++row) {
+                for (std::size_t col = 0; col < cols; ++col) {
                     result[col][row] = matrix[row][col];
                 }
             }
@@ -31,16 +31,10 @@ namespace P0867 {
             Solution s;
             const std::vector<std::vector<int>> result =
                 s.transpose({{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
-            const std::vector<std::vector<int>> expected{
-                {1, 4, 7}, {2, 5, 8}, {3, 6, 9}};
             REQUIRE(result.size() == 3);
             REQUIRE(result.front().size() == 3);
-            for (std::size_t col = 0; col < 3; ++col) {
-                for (std::size_t row = 0; row < 3; ++row) {
-                    INFO("Element " << row << ',' << col);
-                    REQUIRE(result[row][col] == expected[row][col]);
-                }
-            }
+            REQUIRE(result == std::vector<std::vector<int>>{
+                                  {1, 4, 7}, {2, 5, 8}, {3, 6, 9}});
         }
 
         SECTION("Example 2") {
@@ -49,16 +43,10 @@ namespace P0867 {
             Solution s;
             const std::vector<std::vector<int>> result =
                 s.transpose({{1, 2, 3}, {4, 5, 6}});
-            const std::vector<std::vector<int>> expected{
-                {1, 4}, {2, 5}, {3, 6}};
             REQUIRE(result.size() == 3);
             REQUIRE(result.front().size() == 2);
-            for (std::size_t col = 0; col < 2; ++col) {
-                for (std::size_t row = 0; row < 3; ++row) {
-                    INFO("Element " << row << ',' << col);
-                    REQUIRE(result[row][col] == expected[row][col]);
-                }
-            }
+            REQUIRE(result ==
+                    std::vector<std::vector<int>>{{1, 4}, {2, 5}, {3, 6}});
         }
     }
 } // namespace P0867

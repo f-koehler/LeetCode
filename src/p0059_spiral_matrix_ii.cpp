@@ -44,16 +44,9 @@ namespace P0059 {
             Solution s;
             const int n = 3;
             const std::vector<std::vector<int>> output = s.generateMatrix(n);
-            const std::vector<std::vector<int>> expected{
-                {1, 2, 3}, {8, 9, 4}, {7, 6, 5}};
             REQUIRE(output.size() == n);
-            for (std::size_t i = 0; i < expected.size(); ++i) {
-                REQUIRE(output[i].size() == n);
-                for (std::size_t j = 0; j < expected.size(); ++j) {
-                    INFO(i << ',' << j);
-                    REQUIRE(output[i][j] == expected[i][j]);
-                }
-            }
+            REQUIRE(output == std::vector<std::vector<int>>{
+                                  {1, 2, 3}, {8, 9, 4}, {7, 6, 5}});
         }
 
         SECTION("Example 2") {
@@ -62,15 +55,8 @@ namespace P0059 {
             Solution s;
             const int n = 1;
             const std::vector<std::vector<int>> output = s.generateMatrix(n);
-            const std::vector<std::vector<int>> expected{{1}};
             REQUIRE(output.size() == n);
-            for (std::size_t i = 0; i < expected.size(); ++i) {
-                REQUIRE(output[i].size() == n);
-                for (std::size_t j = 0; j < expected.size(); ++j) {
-                    INFO(i << ',' << j);
-                    REQUIRE(output[i][j] == expected[i][j]);
-                }
-            }
+            REQUIRE(output == std::vector<std::vector<int>>{{1}});
         }
     }
 } // namespace P0059

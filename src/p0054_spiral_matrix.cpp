@@ -59,10 +59,7 @@ namespace P0054 {
             const std::vector<int> expected{1, 2, 3, 6, 9, 8, 7, 4, 5};
             const std::vector<int> output = s.spiralOrder(input);
             REQUIRE(output.size() == expected.size());
-            for (std::size_t i = 0; i < expected.size(); ++i) {
-                INFO(i);
-                REQUIRE(output[i] == expected[i]);
-            }
+            REQUIRE(output == expected);
         }
 
         SECTION("Example 2") {
@@ -75,10 +72,7 @@ namespace P0054 {
                                             11, 10, 9, 5, 6, 7};
             const std::vector<int> output = s.spiralOrder(input);
             REQUIRE(output.size() == expected.size());
-            for (std::size_t i = 0; i < expected.size(); ++i) {
-                INFO(i);
-                REQUIRE(output[i] == expected[i]);
-            }
+            REQUIRE(output == expected);
         }
     }
 } // namespace P0054

@@ -39,15 +39,9 @@ namespace P2373 {
             Solution s;
             const std::vector<std::vector<int>> result = s.largestLocal(
                 {{9, 9, 8, 1}, {5, 6, 2, 6}, {8, 2, 6, 4}, {6, 2, 2, 2}});
-            const std::vector<std::vector<int>> expected{{9, 9}, {8, 6}};
             REQUIRE(result.size() == 2);
             REQUIRE(result.front().size() == 2);
-            for (std::size_t row = 0; row < 2; ++row) {
-                for (std::size_t col = 0; col < 2; ++col) {
-                    INFO("Element " << row << ',' << col);
-                    REQUIRE(result[row][col] == expected[row][col]);
-                }
-            }
+            REQUIRE(result == std::vector<std::vector<int>>{{9, 9}, {8, 6}});
         }
 
         SECTION("Example 2") {
@@ -61,16 +55,10 @@ namespace P2373 {
                                 {1, 1, 2, 1, 1},
                                 {1, 1, 1, 1, 1},
                                 {1, 1, 1, 1, 1}});
-            const std::vector<std::vector<int>> expected{
-                {2, 2, 2}, {2, 2, 2}, {2, 2, 2}};
             REQUIRE(result.size() == 3);
             REQUIRE(result.front().size() == 3);
-            for (std::size_t row = 0; row < 3; ++row) {
-                for (std::size_t col = 0; col < 3; ++col) {
-                    INFO("Element " << row << ',' << col);
-                    REQUIRE(result[row][col] == expected[row][col]);
-                }
-            }
+            REQUIRE(result == std::vector<std::vector<int>>{
+                                  {2, 2, 2}, {2, 2, 2}, {2, 2, 2}});
         }
     }
 } // namespace P2373
