@@ -18,6 +18,7 @@ set(LEET_CODE_SOURCES
     src/p0498_diagonal_traverse.cpp
     src/p0048_rotate_image.cpp
     src/p0835_image_overlap.cpp
+    src/p3160_find_the_number_of_distinct_colors_among_the_balls.cpp
     src/p0933_number_of_recent_calls.cpp
     src/p1004_max_consecutive_ones_iii.cpp
     src/p0054_spiral_matrix.cpp
