@@ -30,7 +30,7 @@ set(LEET_CODE_SOURCES
     src/p0001_two_sum.cpp
     src/p0557_reverse_words_in_a_string_iii.cpp
     src/p0835_image_overlap.cpp
-    src/p643_maximum_average_subarray_i.cpp
+    src/p0643_maximum_average_subarray_i.cpp
     src/p0009_palindrome_number.cpp
     src/p0002_add_two_numbers.cpp
     src/p0735_asteroid_collision.cpp
@@ -68,7 +68,7 @@ set(LEET_CODE_SOURCES
     src/p0933_number_of_recent_calls.cpp
     src/p3159_find_occurrences_of_an_element_in_an_array.cpp
     src/p2469_convert_the_temperature.cpp
-    src/p605_can_place_flowers.cpp
+    src/p0605_can_place_flowers.cpp
     src/p0733_flood_fill.cpp
     src/p0872_leaf_similar_trees.cpp
     src/p0104_maximum_depth_of_binary_tree.cpp
