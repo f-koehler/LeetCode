@@ -64,6 +64,12 @@ set(LEET_CODE_SOURCES
     src/p1248_count_number_of_nice_subarrays.cpp
     src/p0733_flood_fill.cpp
     src/p0643_maximum_average_subarray_i.cpp
+    src/p3159_find_occurrences_of_an_element_in_an_array.cpp
+    src/p0374_guess_number_higher_or_lower.cpp
+    src/p0042_trapping_rain_water.cpp
+    src/p0001_two_sum.cpp
+    src/p1071_greatest_common_divisor_of_strings.cpp
+    src/p0700_search_in_a_binary_search_tree.cpp
     src/p0104_maximum_depth_of_binary_tree.cpp
     src/p0923_3sum_with_multiplicity.cpp
     src/p0003_longest_substring_without_repeating_characters.cpp
