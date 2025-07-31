@@ -43,6 +43,7 @@ set(LEET_CODE_SOURCES
     src/p1137_nth_tribonacci_number.cpp
     src/p0733_flood_fill.cpp
     src/p3159_find_occurrences_of_an_element_in_an_array.cpp
+    src/p0374_guess_number_higher_or_lower.cpp
     src/p0042_trapping_rain_water.cpp
     src/p0001_two_sum.cpp
     src/p1071_greatest_common_divisor_of_strings.cpp
