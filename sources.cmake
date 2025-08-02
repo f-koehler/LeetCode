@@ -20,6 +20,7 @@ set(LEET_CODE_SOURCES
     src/p2469_convert_the_temperature.cpp
     src/p0498_diagonal_traverse.cpp
     src/p0048_rotate_image.cpp
+    src/p0056_merge_intervals.cpp
     src/p0835_image_overlap.cpp
     src/p3160_find_the_number_of_distinct_colors_among_the_balls.cpp
     src/p0933_number_of_recent_calls.cpp
