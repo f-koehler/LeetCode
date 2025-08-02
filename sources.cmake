@@ -93,6 +93,7 @@ set(LEET_CODE_SOURCES
     src/p0841_keys_and_rooms.cpp
     src/p0146_lru_cache.cpp
     src/p0923_3sum_with_multiplicity.cpp
+    src/p0380_insert_delete_getrandom_o1.cpp
     src/p0014_longest_common_prefix.cpp
     src/p0017_letter_combinations_of_a_phone_number.cpp
     src/p2131_longest_palindrome_by_concatenating_two_letter_words.cpp
