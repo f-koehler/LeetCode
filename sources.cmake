@@ -40,6 +40,7 @@ set(LEET_CODE_SOURCES
     src/p1424_diagonal_traverse_ii.cpp
     src/p0735_asteroid_collision.cpp
     src/p0001_two_sum.cpp
+    src/p0239_sliding_window_maximum.cpp
     src/p0443_string_compression.cpp
     src/p0454_4sum_ii.cpp
     src/p1318_minimum_flips_to_make_a_or_b_equal_to_c.cpp
