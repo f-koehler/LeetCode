@@ -81,6 +81,24 @@ set(LEET_CODE_SOURCES
     src/p0136_single_number.cpp
     src/p0746_min_cost_climbing_stairs.cpp
     src/p1010_pairs_of_songs_with_total_durations_divisible_by_60.cpp
+    src/p1004_max_consecutive_ones_iii.cpp
+    src/p0338_counting_bits.cpp
+    src/p0498_diagonal_traverse.cpp
+    src/p0443_string_compression.cpp
+    src/p1248_count_number_of_nice_subarrays.cpp
+    src/p0112_path_sum.cpp
+    src/p0954_array_of_doubled_pairs.cpp
+    src/p0841_keys_and_rooms.cpp
+    src/p0146_lru_cache.cpp
+    src/p0923_3sum_with_multiplicity.cpp
+    src/p0014_longest_common_prefix.cpp
+    src/p0017_letter_combinations_of_a_phone_number.cpp
+    src/p2131_longest_palindrome_by_concatenating_two_letter_words.cpp
+    src/p0021_merge_two_sorted_lists.cpp
+    src/p0027_remove_element.cpp
+    src/p0283_move_zeroes.cpp
+    src/p0048_rotate_image.cpp
+    src/p0557_reverse_words_in_a_string_iii.cpp)
     src/p0876_middle_of_the_linked_list.cpp
     src/p1732_find_the_highest_altitude.cpp
     src/p1768_merge_string_alternately.cpp)
