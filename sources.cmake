@@ -5,6 +5,7 @@ set(LEET_CODE_SOURCES
     src/p0735_asteroid_collision.cpp
     src/p2469_convert_the_temperature.cpp
     src/p1431_kids_with_the_greatest_number_of_candies.cpp
+    src/p0056_merge_intervals.cpp
     src/p0746_min_cost_climbing_stairs.cpp
     src/p3160_find_the_number_of_distinct_colors_among_the_balls.cpp
     src/p0933_number_of_recent_calls.cpp
