@@ -24,6 +24,7 @@ set(LEET_CODE_SOURCES
     src/p0009_palindrome_number.cpp
     src/p0054_spiral_matrix.cpp
     src/p1929_concatenation_of_array.cpp
+    src/p0239_sliding_window_maximum.cpp
     src/p0872_leaf_similar_trees.cpp
     src/p0019_remove_nth_node_from_end_of_list.cpp
     src/p1318_minimum_flips_to_make_a_or_b_equal_to_c.cpp
