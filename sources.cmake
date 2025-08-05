@@ -15,6 +15,7 @@ set(LEET_CODE_SOURCES
     src/p0128_longest_consecutive_sequence.cpp
     src/p0605_can_place_flowers.cpp
     src/p0643_maximum_average_subarray_i.cpp
+    src/p1226_the_dining_philosophers.cpp
     src/p0647_palindromic_substrings.cpp
     src/p0334_increasing_triplet_subsequence.cpp
     src/p1679_max_number_of_k_sum_pairs.cpp
