@@ -33,7 +33,7 @@ namespace P0647 {
             return count;
         }
 
-        int conutSubstringsManacher(const std::string &original) {
+        int countSubstringsManacher(const std::string &original) {
             // Interesting O(N) algorithm for this problem:
             // https://cp-algorithms.com/string/manacher.html
             // https://algo.monster/liteproblems/647
@@ -64,6 +64,8 @@ namespace P0647 {
                 if (right > i) {
                 }
             }
+
+            return 0;
         }
     };
 
