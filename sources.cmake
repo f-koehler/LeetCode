@@ -29,6 +29,7 @@ set(LEET_CODE_SOURCES
     src/p0872_leaf_similar_trees.cpp
     src/p0019_remove_nth_node_from_end_of_list.cpp
     src/p1318_minimum_flips_to_make_a_or_b_equal_to_c.cpp
+    src/p1117_building_h2o.cpp
     src/p0392_is_subsequence.cpp
     src/p0011_container_with_most_water.cpp
     src/p0450_delete_node_in_a_bst.cpp
