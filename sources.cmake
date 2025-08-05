@@ -10,6 +10,7 @@ set(LEET_CODE_SOURCES
     src/p0021_merge_two_sorted_lists.cpp
     src/p1137_nth_tribonacci_number.cpp
     src/p0118_pascals_triangle.cpp
+    src/p1115_print_foobar_alternately.cpp
     src/p3159_find_occurrences_of_an_element_in_an_array.cpp
     src/p0872_leaf_similar_trees.cpp
     src/p0954_array_of_doubled_pairs.cpp
