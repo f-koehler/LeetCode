@@ -18,7 +18,7 @@ namespace P1115 {
         std::binary_semaphore m_sem_bar;
 
       public:
-        FooBar(int n)
+        explicit FooBar(int n)
             : m_n(n),
               m_sem_foo(1),
               m_sem_bar(0) {}
@@ -45,6 +45,8 @@ namespace P1115 {
     };
 
     TEST_CASE("1115 - Print FooBar Alternately", "[Concurrency]") {
+        const int repetition = GENERATE(Catch::Generators::range(0, 128));
+        INFO("repetition = " << repetition);
 
         SECTION("Example 1") {
             // Input: n = 1
