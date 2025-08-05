@@ -7,12 +7,12 @@
 #include <sstream>
 #include <thread>
 
-std::ostringstream strm;
-void printFirst() { strm << "first"; }
-void printSecond() { strm << "second"; }
-void printThird() { strm << "third"; }
-
 namespace P1114 {
+    std::ostringstream strm;
+    void printFirst() { strm << "first"; }
+    void printSecond() { strm << "second"; }
+    void printThird() { strm << "third"; }
+
     class Foo {
       private:
         std::mutex m_mutex;
