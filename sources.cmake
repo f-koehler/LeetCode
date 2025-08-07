@@ -45,6 +45,7 @@ set(LEET_CODE_SOURCES
     src/p0867_transpose_matrix.cpp
     src/p0724_find_pivot_index.cpp
     src/p0003_longest_substring_without_repeating_characters.cpp
+    src/p0121_best_time_to_buy_and_sell_stock.cpp
     src/p1137_nth_tribonacci_number.cpp
     src/p0733_flood_fill.cpp
     src/p3159_find_occurrences_of_an_element_in_an_array.cpp
