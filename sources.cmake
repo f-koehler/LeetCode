@@ -86,4 +86,5 @@ set(LEET_CODE_SOURCES
     src/p0027_remove_element.cpp
     src/p0283_move_zeroes.cpp
     src/p0048_rotate_image.cpp
+    src/p1606_find_servers_that_handled_most_number_of_requests.cpp
     src/p0557_reverse_words_in_a_string_iii.cpp)
