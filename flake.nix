@@ -55,6 +55,7 @@
                   pkgs.vcpkg
                   pkgs.ninja
                   pkgs.gnumake
+                  pkgs.gcc15
                 ];
 
                 languages = {
