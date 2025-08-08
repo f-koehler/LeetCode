@@ -68,7 +68,7 @@
                   rust.enable = true;
                 };
 
-                pre-commit.hooks = {
+                git-hooks.hooks = {
                   # C++
                   clang-format = {
                     enable = true;
