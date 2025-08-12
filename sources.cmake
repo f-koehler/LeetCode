@@ -42,6 +42,7 @@ set(LEET_CODE_SOURCES
     src/p1926_nearest_exit_from_entrance_in_maze.cpp
     src/p0766_toeplitz_matrix.cpp
     src/p0206_reverse_linked_list.cpp
+    src/p0295_find_median_from_data_stream.cpp
     src/p0867_transpose_matrix.cpp
     src/p0724_find_pivot_index.cpp
     src/p0003_longest_substring_without_repeating_characters.cpp
