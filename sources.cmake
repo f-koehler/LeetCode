@@ -20,6 +20,7 @@ set(LEET_CODE_SOURCES
     src/p0334_increasing_triplet_subsequence.cpp
     src/p1679_max_number_of_k_sum_pairs.cpp
     src/p0069_sqrt_x.cpp
+    src/p0342_power_of_four.cpp
     src/p0454_4sum_ii.cpp
     src/p0238_product_of_array_except_self.cpp
     src/p0345_reverse_vowels_of_a_string.cpp
@@ -81,6 +82,7 @@ set(LEET_CODE_SOURCES
     src/p0954_array_of_doubled_pairs.cpp
     src/p0841_keys_and_rooms.cpp
     src/p0146_lru_cache.cpp
+    src/p0231_power_of_two.cpp
     src/p0923_3sum_with_multiplicity.cpp
     src/p0380_insert_delete_getrandom_o1.cpp
     src/p0014_longest_common_prefix.cpp
