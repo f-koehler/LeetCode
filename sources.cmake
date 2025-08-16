@@ -22,6 +22,7 @@ set(LEET_CODE_SOURCES
     src/p0069_sqrt_x.cpp
     src/p0342_power_of_four.cpp
     src/p0454_4sum_ii.cpp
+    src/p0900_rle_iterator.cpp
     src/p0238_product_of_array_except_self.cpp
     src/p0345_reverse_vowels_of_a_string.cpp
     src/p0009_palindrome_number.cpp
