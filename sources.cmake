@@ -54,6 +54,7 @@ set(LEET_CODE_SOURCES
     src/p0443_string_compression.cpp
     src/p1116_print_zero_even_odd.cpp
     src/p0454_4sum_ii.cpp
+    src/p0284_peeking_iterator.cpp
     src/p1318_minimum_flips_to_make_a_or_b_equal_to_c.cpp
     src/p0557_reverse_words_in_a_string_iii.cpp
     src/p1117_building_h2o.cpp
