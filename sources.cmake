@@ -78,6 +78,7 @@ set(LEET_CODE_SOURCES
     src/p2131_longest_palindrome_by_concatenating_two_letter_words.cpp
     src/p0867_transpose_matrix.cpp
     src/p0146_lru_cache.cpp
+    src/p2390_removing_stars_from_a_string.cpp
     src/p0645_set_mismatch.cpp
     src/p0334_increasing_triplet_subsequence.cpp
     src/p1248_count_number_of_nice_subarrays.cpp
