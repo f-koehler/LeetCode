@@ -86,6 +86,7 @@ set(LEET_CODE_SOURCES
     src/p1226_the_dining_philosophers.cpp
     src/p0643_maximum_average_subarray_i.cpp
     src/p1286_iterator_for_combination.cpp
+    src/p0394_decode_string.cpp
     src/p0104_maximum_depth_of_binary_tree.cpp
     src/p0295_find_median_from_data_stream.cpp
     src/p0923_3sum_with_multiplicity.cpp
