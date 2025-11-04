@@ -66,6 +66,7 @@ src/p0341_flatten_nested_list_iterator.cpp
 src/p0231_power_of_two.cpp
 src/p0206_reverse_linked_list.cpp
 src/p0284_peeking_iterator.cpp
+src/p0198_house_robber.cpp
 src/p0876_middle_of_the_linked_list.cpp
 src/p0454_4sum_ii.cpp
 src/p3160_find_the_number_of_distinct_colors_among_the_balls.cpp
