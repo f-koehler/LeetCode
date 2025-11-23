@@ -79,6 +79,7 @@ src/p2248_intersection_of_multiple_arrays.cpp
 src/p0112_path_sum.cpp
 src/p0380_insert_delete_getrandom_o1.cpp
 src/p0073_set_matrix_zeroes.cpp
+src/p0528_random_pick_with_weight.cpp
 src/p0059_spiral_matrix_ii.cpp
 src/p2390_removing_stars_from_a_string.cpp
 src/p0048_rotate_image.cpp
