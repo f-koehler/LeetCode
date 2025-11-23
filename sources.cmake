@@ -64,6 +64,7 @@ src/p0643_maximum_average_subarray_i.cpp
 src/p0733_flood_fill.cpp
 src/p0341_flatten_nested_list_iterator.cpp
 src/p0231_power_of_two.cpp
+src/p0055_jump_game.cpp
 src/p0206_reverse_linked_list.cpp
 src/p0284_peeking_iterator.cpp
 src/p0198_house_robber.cpp
