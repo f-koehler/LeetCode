@@ -63,7 +63,6 @@
                   python = {
                     enable = true;
                     uv.enable = true;
-                    package = pkgs.python313Full;
                   };
                   rust.enable = true;
                 };
