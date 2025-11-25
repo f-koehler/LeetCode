@@ -106,6 +106,7 @@ src/p0169_majority_element.cpp
 src/p0724_find_pivot_index.cpp
 src/p0056_merge_intervals.cpp
 src/p0900_rle_iterator.cpp
+src/p0046_permutations.cpp
 src/p0835_image_overlap.cpp
 src/p1004_max_consecutive_ones_iii.cpp
 src/p1456_maximum_number_of_vowels_in_a_substring_of_given_length.cpp
