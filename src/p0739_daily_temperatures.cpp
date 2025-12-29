@@ -12,15 +12,15 @@ namespace P0739 {
             std::vector<int> result(temperatures.size(), 0);
 
             // stack of index/temperature still waiting for a warmer temperature
-            std::stack<std::pair<std::size_t, int>> stack;
+            std::stack<std::size_t> stack;
             for (const auto [index, temperature] :
                  std::views::enumerate(temperatures)) {
-                while (!stack.empty() && (temperature > stack.top().second)) {
-                    result[stack.top().first] =
-                        static_cast<int>(index - stack.top().first);
+                while (!stack.empty() &&
+                       (temperature > temperatures[stack.top()])) {
+                    result[stack.top()] = static_cast<int>(index - stack.top());
                     stack.pop();
                 }
-                stack.emplace(index, temperature);
+                stack.emplace(index);
             }
             return result;
         }
