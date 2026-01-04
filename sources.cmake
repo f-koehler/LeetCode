@@ -86,6 +86,7 @@ src/p0923_3sum_with_multiplicity.cpp
 src/p0056_merge_intervals.cpp
 src/p0003_longest_substring_without_repeating_characters.cpp
 src/p1010_pairs_of_songs_with_total_durations_divisible_by_60.cpp
+src/p0217_contains_duplicate.cpp
 src/p0876_middle_of_the_linked_list.cpp
 src/p1679_max_number_of_k_sum_pairs.cpp
 src/p0021_merge_two_sorted_lists.cpp
