@@ -14,6 +14,7 @@ src/p0454_4sum_ii.cpp
 src/p0295_find_median_from_data_stream.cpp
 src/p0498_diagonal_traverse.cpp
 src/p0050_pow_x_n.cpp
+src/p0125_valid_palindrome.cpp
 src/p0238_product_of_array_except_self.cpp
 src/p2215_find_the_difference_of_two_arrays.cpp
 src/p1926_nearest_exit_from_entrance_in_maze.cpp
