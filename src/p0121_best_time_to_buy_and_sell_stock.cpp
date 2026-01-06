@@ -17,7 +17,7 @@ namespace P0121 {
     };
 
     TEST_CASE("0121 - Best Time to Buy and Sell Stock",
-              "[Array][Dynamic Programming]") {
+              "[Array][Dynamic Programming][NeetCode150]") {
 
         SECTION("Example 1") {
             // Input: prices = [7,1,5,3,6,4]

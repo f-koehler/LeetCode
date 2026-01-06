@@ -61,7 +61,7 @@ namespace P0739 {
         }
     };
 
-    TEST_CASE("0739 - Daily Temperatures", "[Array][Stack][Monotonic Stack]") {
+    TEST_CASE("0739 - Daily Temperatures", "[Array][Stack][Monotonic Stack][NeetCode150]") {
 
         SECTION("Example 1") {
             // Input: temperatures = [73,74,75,71,69,72,76,73]

@@ -67,7 +67,7 @@ namespace P0049 {
         });
     }
     TEST_CASE("0049 - Group Anagrams",
-              "[Array][Hash Table][String][Sorting][Neetcode150]") {
+              "[Array][Hash Table][String][Sorting][NeetCode150]") {
         Solution s;
 
         SECTION("Without Sorting") {

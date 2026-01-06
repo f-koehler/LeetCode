@@ -25,7 +25,7 @@ namespace P0242 {
         }
     };
 
-    TEST_CASE("0242 - Valid Anagram", "[Hash Table][String][Sorting]") {
+    TEST_CASE("0242 - Valid Anagram", "[Hash Table][String][Sorting][NeetCode150]") {
         SECTION("Example 1") {
             Solution s;
             REQUIRE(s.isAnagram("anagram", "nagaram"));

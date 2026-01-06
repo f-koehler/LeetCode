@@ -32,7 +32,7 @@ namespace P0973 {
 
     TEST_CASE("0973 - K Closest Points to Origin",
               "[Array][Math][Divide and Conquer][Geometry][Sorting][Heap "
-              "(Priority Queue)][Quickselect]") {
+              "(Priority Queue)][Quickselect][NeetCode150]") {
 
         SECTION("Example 1") {
             // Input: points = [[1,3],[-2,2]], k = 1
