@@ -58,6 +58,7 @@ src/p0338_counting_bits.cpp
 src/p0341_flatten_nested_list_iterator.cpp
 src/p1114_print_in_order.cpp
 src/p0055_jump_game.cpp
+src/p0202_happy_number.cpp
 src/p0981_time_based_key_value_store.cpp
 src/p1286_iterator_for_combination.cpp
 src/p0268_missing_number.cpp
