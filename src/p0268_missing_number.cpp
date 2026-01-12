@@ -18,9 +18,9 @@ namespace P0268 {
         }
     };
 
-    TEST_CASE(
-        "0268 - Missing Number",
-        "[Array][Hash Table][Math][Binary Search][Bit Manipulation][Sorting][NeetCode150]") {
+    TEST_CASE("0268 - Missing Number",
+              "[Array][Hash Table][Math][Binary Search][Bit "
+              "Manipulation][Sorting][NeetCode150]") {
         SECTION("Example 1") {
             REQUIRE(Solution{}.missingNumber({3, 0, 1}) == 2);
         }

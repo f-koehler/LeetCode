@@ -48,7 +48,6 @@
 
             # c++
             clang-format.enable = true;
-            clang-tidy.enable = true;
             cmake-format.enable = true;
           };
         };
@@ -68,12 +67,12 @@
         default =
           let
             pkgs = getNixpkgs system;
-            inherit (inputs.nixpkgs) lib;
+            # inherit (inputs.nixpkgs) lib;
             inherit (self.checks.${system}) pre-commit-check;
           in
           pkgs.mkShell {
             buildInputs = pre-commit-check.enabledPackages;
-            packages = [];
+            packages = [ ];
             env = { };
             inherit (pre-commit-check) shellHook;
           };

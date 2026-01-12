@@ -26,7 +26,8 @@ namespace P0217 {
             REQUIRE(!Solution().containsDuplicate({1, 2, 3, 4}));
         }
         SECTION("Example 3") {
-            REQUIRE(Solution().containsDuplicate({1,1,1,3,3,4,3,2,4,2}));
+            REQUIRE(
+                Solution().containsDuplicate({1, 1, 1, 3, 3, 4, 3, 2, 4, 2}));
         }
     }
 } // namespace P0217
