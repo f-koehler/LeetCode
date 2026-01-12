@@ -1,158 +1,82 @@
 {
-  inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-    systems.url = "github:nix-systems/default";
-    devenv.url = "github:cachix/devenv";
-    devenv.inputs.nixpkgs.follows = "nixpkgs";
-  };
+  description = "Fabian Koehler's LeetCode solutions (C++/Rust/Python)";
 
-  nixConfig = {
-    extra-trusted-public-keys = "devenv.cachix.org-1:w1cLUi8dv3hnoSPGAuibQv+f9TZLr6cv/Hm9XgU50cw=";
-    extra-substituters = "https://devenv.cachix.org";
+  inputs = {
+    git-hooks = {
+      url = "github:cachix/git-hooks.nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+    systems.url = "github:nix-systems/default";
   };
 
   outputs =
-    {
-      self,
-      nixpkgs,
-      devenv,
-      systems,
-      ...
-    }@inputs:
+    { self, ... }@inputs:
     let
-      forEachSystem = nixpkgs.lib.genAttrs (import systems);
+      forEachSystem = inputs.nixpkgs.lib.genAttrs (import inputs.systems);
+      getNixpkgs =
+        system:
+        import inputs.nixpkgs {
+          inherit system;
+          config.allowUnfree = true;
+        };
+
     in
     {
-      packages = forEachSystem (system: {
-        devenv-up = self.devShells.${system}.default.config.procfileScript;
-        devenv-test = self.devShells.${system}.default.config.test;
-      });
+      checks = forEachSystem (system: {
+        pre-commit-check = inputs.git-hooks.lib.${system}.run {
+          src = ./.;
+          hooks = {
+            # nix
+            deadnix.enable = true;
+            flake-checker.enable = true;
+            nil.enable = true;
+            nixfmt-rfc-style.enable = true;
+            statix.enable = true;
 
-      devShells = forEachSystem (
+            # python
+            ruff.enable = true;
+            ruff-format.enable = true;
+
+            # rust
+            cargo-check.enable = true;
+            clippy.enable = true;
+            rustfmt.enable = true;
+
+            # toml
+            taplo.enable = true;
+
+            # c++
+            clang-format.enable = true;
+            clang-tidy.enable = true;
+            cmake-format.enable = true;
+          };
+        };
+      });
+      formatter = forEachSystem (
         system:
         let
-          pkgs = nixpkgs.legacyPackages.${system};
+          pkgs = getNixpkgs system;
+          inherit (self.checks.${system}) pre-commit-check;
+          script = ''
+            ${pre-commit-check.config.package}/bin/pre-commit run --all-files --config ${pre-commit-check.config.configFile}
+          '';
         in
-        # llvm = pkgs.llvmPackages_latest;
-        {
-          default = devenv.lib.mkShell {
-            inherit inputs pkgs;
-            modules = [
-              {
-                env.VCPKG_ROOT = "${pkgs.vcpkg}/share/vcpkg";
-
-                packages = [
-                  # llvm.libllvm
-                  # llvm.libstdcxxClang
-                  # llvm.lldb
-                  # (pkgs.clang-tools.override {enableLibcxx = true;})
-                  pkgs.cmake
-                  pkgs.cmake-format
-                  pkgs.cmake-lint
-                  pkgs.cppcheck
-                  pkgs.flawfinder
-                  pkgs.git
-                  pkgs.vcpkg
-                  pkgs.ninja
-                  pkgs.gnumake
-                  pkgs.gcc15
-                ];
-
-                languages = {
-                  cplusplus.enable = true;
-                  python = {
-                    enable = true;
-                    uv.enable = true;
-                  };
-                  rust.enable = true;
-                };
-
-                git-hooks.hooks = {
-                  # C++
-                  clang-format = {
-                    enable = true;
-                    types_or = [
-                      "c++"
-                      "c"
-                    ];
-                  };
-                  clang-tidy = {
-                    enable = false;
-                    types_or = [
-                      "c++"
-                      "c"
-                    ];
-                    entry = "clang-tidy -p build --fix";
-                  };
-                  # cppcheck = {
-                  #   enable = true;
-                  #   types = ["c++"];
-                  #   entry = ''
-                  #     cppcheck \
-                  #         --check-level=exhaustive \
-                  #         --enable=performance \
-                  #         --enable=portability \
-                  #         --enable=style \
-                  #         --enable=warning \
-                  #         --library=qt \
-                  #         --error-exitcode=1 \
-                  #         --inline-suppr \
-                  #         --suppress=unusedStructMember \
-                  #         --suppress=ctuOneDefinitionRuleViolation
-                  #   '';
-                  # };
-                  flawfinder = {
-                    enable = true;
-                    pass_filenames = false;
-                    entry = "flawfinder --error-level=0 ./src";
-                  };
-
-                  # CMake
-                  cmake-format = {
-                    enable = true;
-                    types = [ "cmake" ];
-                    entry = "cmake-format -c .cmake.yaml -i";
-                  };
-                  cmake-lint = {
-                    enable = true;
-                    types = [ "cmake" ];
-                    entry = "cmake-lint -c .cmake.yaml";
-                  };
-
-                  # Python
-                  ruff.enable = true;
-                  ruff-format.enable = true;
-
-                  # nix
-                  nixfmt-rfc-style.enable = true;
-                  deadnix.enable = true;
-                  flake-checker.enable = true;
-                  nil.enable = true;
-                  statix.enable = true;
-
-                  # toml
-                  taplo.enable = true;
-                  check-toml.enable = true;
-
-                  # rust
-                  cargo-check.enable = true;
-                  cargo-verify-project = {
-                    enable = true;
-                    pass_filenames = false;
-                    entry = "cargo verify-project --locked";
-                  };
-                  cargo-test = {
-                    enable = true;
-                    pass_filenames = false;
-                    entry = "cargo test";
-                  };
-                  clippy.enable = true;
-                  rustfmt.enable = true;
-                };
-              }
-            ];
-          };
-        }
+        pkgs.writeShellScriptBin "pre-commit-run" script
       );
+      devShells = forEachSystem (system: {
+        default =
+          let
+            pkgs = getNixpkgs system;
+            inherit (inputs.nixpkgs) lib;
+            inherit (self.checks.${system}) pre-commit-check;
+          in
+          pkgs.mkShell {
+            buildInputs = pre-commit-check.enabledPackages;
+            packages = [];
+            env = { };
+            inherit (pre-commit-check) shellHook;
+          };
+      });
     };
 }
