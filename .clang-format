@@ -11,3 +11,6 @@ PackConstructorInitializers: Never
 SpaceAfterTemplateKeyword: true
 SortIncludes: CaseSensitive
 CommentPragmas: '^\\.+'
+
+---
+Language: Json

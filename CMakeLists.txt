@@ -1,14 +1,13 @@
 cmake_minimum_required(VERSION 3.12)
 project(LeetCode CXX)
 
-add_subdirectory(external/Catch2)
-
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Wpedantic")
 
+find_package(Catch2 CONFIG REQUIRED)
 file(GLOB LEET_CODE_SOURCES src/p*.cpp)
 add_executable(LeetCode main.cpp util/tree.cpp ${LEET_CODE_SOURCES})
 target_link_libraries(LeetCode PRIVATE Catch2::Catch2WithMain)
