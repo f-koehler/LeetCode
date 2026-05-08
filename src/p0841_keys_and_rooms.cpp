@@ -3,7 +3,7 @@
 #include <deque>
 #include <vector>
 
-namespace P0841 {
+namespace LeetCode::P0841 {
     class Solution {
       public:
         bool canVisitAllRooms(const std::vector<std::vector<int>> &rooms) {
@@ -47,4 +47,4 @@ namespace P0841 {
             REQUIRE(!s.canVisitAllRooms(rooms));
         }
     }
-} // namespace P0841
+} // namespace LeetCode::P0841

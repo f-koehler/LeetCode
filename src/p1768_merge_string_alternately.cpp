@@ -2,7 +2,7 @@
 #include <iterator>
 #include <string>
 
-namespace P1768 {
+namespace LeetCode::P1768 {
     class Solution {
       public:
         std::string mergeAlternately(const std::string &word1,
@@ -35,4 +35,4 @@ namespace P1768 {
             REQUIRE(s.mergeAlternately("abcd", "pq") == "apbqcd");
         }
     }
-} // namespace P1768
+} // namespace LeetCode::P1768

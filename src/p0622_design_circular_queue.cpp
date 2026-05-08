@@ -1,7 +1,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <vector>
 
-namespace P0622 {
+namespace LeetCode::P0622 {
     class MyCircularQueue {
       private:
         std::vector<int> m_buffer;
@@ -75,4 +75,4 @@ namespace P0622 {
         REQUIRE(queue.enQueue(4));
         REQUIRE(queue.Rear() == 4);
     }
-} // namespace P0622
+} // namespace LeetCode::P0622

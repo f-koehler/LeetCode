@@ -3,7 +3,7 @@
 #include <iostream>
 #include <vector>
 
-namespace P0027 {
+namespace LeetCode::P0027 {
     class Solution {
       public:
         int removeElement(std::vector<int> &nums, int val) {
@@ -49,4 +49,4 @@ namespace P0027 {
                     std::vector<int>{0, 0, 1, 3, 4});
         }
     }
-} // namespace P0027
+} // namespace LeetCode::P0027

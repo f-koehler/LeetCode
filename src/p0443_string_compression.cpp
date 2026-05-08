@@ -1,7 +1,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <vector>
 
-namespace P0443 {
+namespace LeetCode::P0443 {
     class Solution {
       public:
         int compress(std::vector<char> &characters) {
@@ -65,4 +65,4 @@ namespace P0443 {
             REQUIRE(input == std::vector<char>{'a', '3', 'b', '2', 'a', '2'});
         }
     }
-} // namespace P0443
+} // namespace LeetCode::P0443

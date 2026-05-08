@@ -3,7 +3,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <queue>
 
-namespace P0104 {
+namespace LeetCode::P0104 {
     class Solution {
       public:
         int maxDepth(TreeNode *root) {
@@ -59,4 +59,4 @@ namespace P0104 {
             REQUIRE(s.maxDepthRecursive(tree.get_root()) == 2);
         }
     }
-} // namespace P0104
+} // namespace LeetCode::P0104

@@ -5,7 +5,7 @@
 #include <ranges>
 #include <string>
 
-namespace P1286 {
+namespace LeetCode::P1286 {
     class CombinationIterator {
       private:
         const uint64_t m_length;
@@ -90,4 +90,4 @@ namespace P1286 {
             REQUIRE(iter.hasNext());
         }
     }
-} // namespace P1286
+} // namespace LeetCode::P1286

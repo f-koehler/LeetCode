@@ -7,7 +7,7 @@
 #include <sstream>
 #include <thread>
 
-namespace P1114 {
+namespace LeetCode::P1114 {
     std::ostringstream strm;
     void printFirst() { strm << "first"; }
     void printSecond() { strm << "second"; }
@@ -85,4 +85,4 @@ namespace P1114 {
             REQUIRE(strm.str() == "firstsecondthird");
         }
     }
-} // namespace P1114
+} // namespace LeetCode::P1114

@@ -3,7 +3,7 @@
 #include <utility>
 #include <vector>
 
-namespace P0973 {
+namespace LeetCode::P0973 {
     class Solution {
       public:
         [[nodiscard]] std::vector<std::vector<int>>
@@ -56,4 +56,4 @@ namespace P0973 {
             REQUIRE(result.back().back() == 3);
         }
     }
-} // namespace P0973
+} // namespace LeetCode::P0973

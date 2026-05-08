@@ -2,7 +2,7 @@
 #include <numeric>
 #include <vector>
 
-namespace P0724 {
+namespace LeetCode::P0724 {
     class Solution {
       public:
         int pivotIndex(const std::vector<int> &nums) {
@@ -44,4 +44,4 @@ namespace P0724 {
             REQUIRE(s.pivotIndex(std::vector<int>{42}) == 0);
         }
     }
-} // namespace P0724
+} // namespace LeetCode::P0724

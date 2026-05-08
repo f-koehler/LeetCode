@@ -3,7 +3,7 @@
 #include <stack>
 #include <vector>
 
-namespace P0739 {
+namespace LeetCode::P0739 {
     class Solution {
       public:
         [[nodiscard]]
@@ -104,4 +104,4 @@ namespace P0739 {
                     std::vector<int>{8, 1, 5, 4, 3, 2, 1, 1, 0, 0});
         }
     }
-} // namespace P0739
+} // namespace LeetCode::P0739

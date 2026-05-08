@@ -3,7 +3,7 @@
 #include <unordered_set>
 #include <vector>
 
-namespace P0128 {
+namespace LeetCode::P0128 {
     class Solution {
       public:
         int longestConsecutive(const std::vector<int> &nums) {
@@ -60,4 +60,4 @@ namespace P0128 {
             REQUIRE(s.longestConsecutive({1, 0, 1, 2}) == 3);
         }
     }
-} // namespace P0128
+} // namespace LeetCode::P0128

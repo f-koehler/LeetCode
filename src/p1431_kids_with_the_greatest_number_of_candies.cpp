@@ -2,7 +2,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <vector>
 
-namespace P1431 {
+namespace LeetCode::P1431 {
     class Solution {
       public:
         std::vector<bool> kidsWithCandies(const std::vector<int> &candies,
@@ -36,4 +36,4 @@ namespace P1431 {
                     std::vector<bool>{true, false, true});
         }
     }
-} // namespace P1431
+} // namespace LeetCode::P1431

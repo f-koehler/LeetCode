@@ -3,7 +3,7 @@
 #include <unordered_map>
 #include <vector>
 
-namespace P0001 {
+namespace LeetCode::P0001 {
     class Solution {
       public:
         std::vector<int> twoSum(const std::vector<int> &nums, int target) {
@@ -36,4 +36,4 @@ namespace P0001 {
             REQUIRE(s.twoSum(nums, 6) == std::vector<int>({0, 1}));
         }
     }
-} // namespace P0001
+} // namespace LeetCode::P0001

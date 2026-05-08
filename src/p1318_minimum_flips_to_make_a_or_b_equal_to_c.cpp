@@ -2,7 +2,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <iostream>
 
-namespace P1318 {
+namespace LeetCode::P1318 {
     class Solution {
       public:
         int minFlips(int a, int b, int c) {
@@ -44,4 +44,4 @@ namespace P1318 {
             REQUIRE(s.minFlips(1, 1, 1) == 0);
         }
     }
-} // namespace P1318
+} // namespace LeetCode::P1318

@@ -3,7 +3,7 @@
 #include <string>
 #include <unordered_map>
 
-namespace P0003 {
+namespace LeetCode::P0003 {
     class Solution {
       public:
         int lengthOfLongestSubstring(const std::string &s) {
@@ -72,4 +72,4 @@ namespace P0003 {
             REQUIRE(s.lengthOfLongestSubstring("pwwkew") == 3);
         }
     }
-} // namespace P0003
+} // namespace LeetCode::P0003

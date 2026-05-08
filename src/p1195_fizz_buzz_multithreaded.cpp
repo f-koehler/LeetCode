@@ -4,7 +4,7 @@
 #include <sstream>
 #include <thread>
 
-namespace P1195 {
+namespace LeetCode::P1195 {
     std::ostringstream strm;
 
     void printFizz() { strm << "fizz,"; }
@@ -119,4 +119,4 @@ namespace P1195 {
             REQUIRE(strm.str() == "1,2,fizz,4,buzz,");
         }
     }
-} // namespace P1195
+} // namespace LeetCode::P1195

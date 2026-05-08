@@ -2,7 +2,7 @@
 #include <iostream>
 #include <vector>
 
-namespace P3159 {
+namespace LeetCode::P3159 {
     class Solution {
       public:
         std::vector<int> occurrencesOfElement(const std::vector<int> &nums,
@@ -50,4 +50,4 @@ namespace P3159 {
                     std::vector<int>{-1});
         }
     }
-} // namespace P3159
+} // namespace LeetCode::P3159

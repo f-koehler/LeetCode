@@ -8,7 +8,7 @@
 #include <thread>
 #include <vector>
 
-namespace P1117 {
+namespace LeetCode::P1117 {
     std::ostringstream strm;
 
     void releaseHydrogen() { strm << 'H'; }
@@ -137,4 +137,4 @@ namespace P1117 {
             }
         }
     }
-} // namespace P1117
+} // namespace LeetCode::P1117

@@ -2,7 +2,7 @@
 #include <unordered_map>
 #include <vector>
 
-namespace P0454 {
+namespace LeetCode::P0454 {
     class Solution {
       public:
         int fourSumCount(const std::vector<int> &nums1,
@@ -65,4 +65,4 @@ namespace P0454 {
             REQUIRE(s.fourSumCount({-1, -1}, {-1, 1}, {-1, 1}, {1, -1}) == 6);
         }
     }
-} // namespace P0454
+} // namespace LeetCode::P0454

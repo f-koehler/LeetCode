@@ -2,7 +2,7 @@
 #include <iterator>
 #include <string>
 
-namespace P0345 {
+namespace LeetCode::P0345 {
     inline bool is_vowel(char c) {
         switch (c) {
         case 'a':
@@ -60,4 +60,4 @@ namespace P0345 {
             REQUIRE(s.reverseVowels("leetcode") == "leotcede");
         }
     }
-} // namespace P0345
+} // namespace LeetCode::P0345

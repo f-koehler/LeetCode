@@ -3,7 +3,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <vector>
 
-namespace P1004 {
+namespace LeetCode::P1004 {
     class Solution {
       public:
         int longestOnes(const std::vector<int> &nums, int k) {
@@ -60,4 +60,4 @@ namespace P1004 {
                                   3) == 10);
         }
     }
-} // namespace P1004
+} // namespace LeetCode::P1004

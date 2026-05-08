@@ -1,6 +1,6 @@
 #include <catch2/catch_test_macros.hpp>
 
-namespace P0342 {
+namespace LeetCode::P0342 {
     class Solution {
       public:
         constexpr bool isPowerOfFour(int n) {
@@ -47,4 +47,4 @@ namespace P0342 {
             REQUIRE(!s.isPowerOfFour(8));
         }
     }
-} // namespace P0342
+} // namespace LeetCode::P0342

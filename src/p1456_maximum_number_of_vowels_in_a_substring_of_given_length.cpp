@@ -2,7 +2,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <string>
 
-namespace P1456 {
+namespace LeetCode::P1456 {
     constexpr inline bool is_vowel(char c) {
         return (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u');
     }
@@ -50,4 +50,4 @@ namespace P1456 {
             REQUIRE(s.maxVowels("leetcode", 3) == 2);
         }
     }
-} // namespace P1456
+} // namespace LeetCode::P1456

@@ -1,6 +1,6 @@
 #include <catch2/catch_test_macros.hpp>
 
-namespace P0202 {
+namespace LeetCode::P0202 {
     class Solution {
       public:
         [[nodiscard]] constexpr int getSquareOfDigits(int n) noexcept {
@@ -47,4 +47,4 @@ namespace P0202 {
             REQUIRE(!s.isHappyFloyd(2));
         }
     }
-} // namespace P0202
+} // namespace LeetCode::P0202

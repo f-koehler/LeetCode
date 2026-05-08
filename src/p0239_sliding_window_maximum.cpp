@@ -2,7 +2,7 @@
 #include <deque>
 #include <vector>
 
-namespace P0239 {
+namespace LeetCode::P0239 {
     class Solution {
       public:
         std::vector<int> maxSlidingWindow(const std::vector<int> &nums, int k) {
@@ -87,4 +87,4 @@ namespace P0239 {
             REQUIRE(s.maxSlidingWindow({7, 2, 4}, 2) == std::vector<int>{7, 4});
         }
     }
-} // namespace P0239
+} // namespace LeetCode::P0239

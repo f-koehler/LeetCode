@@ -4,7 +4,7 @@
 #include <ranges>
 #include <vector>
 
-namespace P0268 {
+namespace LeetCode::P0268 {
     class Solution {
       public:
         [[nodiscard]] int missingNumber(const std::vector<int> &nums) {
@@ -29,4 +29,4 @@ namespace P0268 {
             REQUIRE(Solution{}.missingNumber({9, 6, 4, 2, 3, 5, 7, 0, 1}) == 8);
         }
     }
-} // namespace P0268
+} // namespace LeetCode::P0268

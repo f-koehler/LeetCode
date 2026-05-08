@@ -1,7 +1,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <vector>
 
-namespace P0334 {
+namespace LeetCode::P0334 {
     class Solution {
       public:
         bool increasingTriplet(const std::vector<int> &nums) {
@@ -46,4 +46,4 @@ namespace P0334 {
                  1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}));
         }
     }
-} // namespace P0334
+} // namespace LeetCode::P0334

@@ -3,7 +3,7 @@
 #include <deque>
 #include <string>
 
-namespace P0394 {
+namespace LeetCode::P0394 {
     class Solution {
       private:
         std::string repeat_string(std::size_t repetitions,
@@ -79,4 +79,4 @@ namespace P0394 {
             REQUIRE(s.decodeString("2[abc]3[cd]ef") == "abcabccdcdcdef");
         }
     }
-} // namespace P0394
+} // namespace LeetCode::P0394

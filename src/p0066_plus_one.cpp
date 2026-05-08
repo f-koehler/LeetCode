@@ -1,7 +1,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <vector>
 
-namespace P0066 {
+namespace LeetCode::P0066 {
     class Solution {
       public:
         std::vector<int> plusOne(std::vector<int> &digits) {
@@ -43,4 +43,4 @@ namespace P0066 {
             REQUIRE(digits == std::vector<int>{1, 0});
         }
     }
-} // namespace P0066
+} // namespace LeetCode::P0066

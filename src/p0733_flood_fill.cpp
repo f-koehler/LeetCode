@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-namespace P0733 {
+namespace LeetCode::P0733 {
     class Solution {
       public:
         void floodFillDFS(vector<vector<int>> &image, const int r, const int c,
@@ -46,4 +46,4 @@ namespace P0733 {
             REQUIRE(s.floodFill(image, 0, 0, 0) == expected);
         }
     }
-} // namespace P0733
+} // namespace LeetCode::P0733

@@ -2,7 +2,7 @@
 #include <unordered_map>
 #include <vector>
 
-namespace P3160 {
+namespace LeetCode::P3160 {
     class Solution {
       public:
         std::vector<int>
@@ -62,4 +62,4 @@ namespace P3160 {
                 std::vector<int>{1, 2, 2, 3, 4});
         }
     }
-} // namespace P3160
+} // namespace LeetCode::P3160

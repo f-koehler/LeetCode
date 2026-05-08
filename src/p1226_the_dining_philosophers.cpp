@@ -8,7 +8,7 @@
 #include <thread>
 #include <vector>
 
-namespace P1226 {
+namespace LeetCode::P1226 {
     void doAction() {
         std::this_thread::sleep_for(std::chrono::microseconds(50));
     }
@@ -52,4 +52,4 @@ namespace P1226 {
             }
         }
     }
-} // namespace P1226
+} // namespace LeetCode::P1226

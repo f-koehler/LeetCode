@@ -2,7 +2,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <vector>
 
-namespace P0056 {
+namespace LeetCode::P0056 {
     class Solution {
       public:
         std::vector<std::vector<int>>
@@ -67,4 +67,4 @@ namespace P0056 {
             REQUIRE(s.merge(input) == expected);
         }
     }
-} // namespace P0056
+} // namespace LeetCode::P0056

@@ -3,7 +3,7 @@
 #include <sstream>
 #include <string>
 
-namespace P0151 {
+namespace LeetCode::P0151 {
     class Solution {
       public:
         std::string reverseWords(const std::string &s) {
@@ -83,4 +83,4 @@ namespace P0151 {
             REQUIRE(s.reverseWordsInPlace(input) == "example good a");
         }
     }
-} // namespace P0151
+} // namespace LeetCode::P0151

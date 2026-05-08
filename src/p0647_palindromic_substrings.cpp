@@ -2,7 +2,7 @@
 #include <string>
 #include <vector>
 
-namespace P0647 {
+namespace LeetCode::P0647 {
     class Solution {
       public:
         int countSubstrings(const std::string &s) {
@@ -86,4 +86,4 @@ namespace P0647 {
             REQUIRE(s.countSubstrings("aaa") == 6);
         }
     }
-} // namespace P0647
+} // namespace LeetCode::P0647

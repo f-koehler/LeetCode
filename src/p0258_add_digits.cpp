@@ -1,6 +1,6 @@
 #include <catch2/catch_test_macros.hpp>
 
-namespace P0258 {
+namespace LeetCode::P0258 {
     class Solution {
       public:
         /*
@@ -53,4 +53,4 @@ namespace P0258 {
             REQUIRE(s.addDigits(18) == 9);
         }
     }
-} // namespace P0258
+} // namespace LeetCode::P0258

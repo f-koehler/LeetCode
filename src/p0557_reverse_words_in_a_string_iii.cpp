@@ -3,7 +3,7 @@
 #include <string>
 using namespace std;
 
-namespace P0557 {
+namespace LeetCode::P0557 {
     class Solution {
       public:
         string reverseWords(string s) {
@@ -31,4 +31,4 @@ namespace P0557 {
                 "s'teL ekat edoCteeL tsetnoc");
         REQUIRE(s.reverseWords("God Ding") == "doG gniD");
     }
-} // namespace P0557
+} // namespace LeetCode::P0557

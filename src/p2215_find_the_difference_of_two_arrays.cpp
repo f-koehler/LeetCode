@@ -3,7 +3,7 @@
 #include <set>
 #include <vector>
 
-namespace P2215 {
+namespace LeetCode::P2215 {
     class Solution {
       public:
         std::vector<std::vector<int>>
@@ -64,4 +64,4 @@ namespace P2215 {
             REQUIRE(result[1] == std::vector<int>{});
         }
     }
-} // namespace P2215
+} // namespace LeetCode::P2215

@@ -4,7 +4,7 @@
 #include <string>
 #include <vector>
 
-namespace P0014 {
+namespace LeetCode::P0014 {
     class Solution {
       public:
         std::string longestCommonPrefix(const std::vector<std::string> &strs) {
@@ -49,4 +49,4 @@ namespace P0014 {
             REQUIRE(s.longestCommonPrefix({"dog", "racecar", "car"}) == "");
         }
     }
-} // namespace P0014
+} // namespace LeetCode::P0014

@@ -5,7 +5,7 @@
 #include <string>
 #include <vector>
 
-namespace P0506 {
+namespace LeetCode::P0506 {
     /*
      * The priority queue/heap based approach hash a complexity O(n) when using
      * an efficient heap construction algorithm (heapify such as Floyd's
@@ -93,4 +93,4 @@ namespace P0506 {
             REQUIRE(s.findRelativeRanksSorting(input) == output);
         }
     }
-} // namespace P0506
+} // namespace LeetCode::P0506

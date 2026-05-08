@@ -1,7 +1,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <vector>
 
-namespace P0566 {
+namespace LeetCode::P0566 {
     class Solution {
       public:
         std::vector<std::vector<int>>
@@ -37,4 +37,4 @@ namespace P0566 {
             REQUIRE(result == std::vector<std::vector<int>>({{1, 2}, {3, 4}}));
         }
     }
-} // namespace P0566
+} // namespace LeetCode::P0566

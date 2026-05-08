@@ -2,7 +2,7 @@
 #include <ranges>
 #include <vector>
 
-namespace P0055 {
+namespace LeetCode::P0055 {
     class Solution {
       public:
         bool canJump(const std::vector<int> &nums) {
@@ -41,4 +41,4 @@ namespace P0055 {
             REQUIRE(s.canJump({2, 3, 1, 0, 4}));
         }
     }
-} // namespace P0055
+} // namespace LeetCode::P0055

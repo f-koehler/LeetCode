@@ -3,7 +3,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <vector>
 
-namespace P0011 {
+namespace LeetCode::P0011 {
     class Solution {
       public:
         int maxArea(const std::vector<int> &height) {
@@ -51,4 +51,4 @@ namespace P0011 {
             REQUIRE(s.maxArea({8, 7, 2, 1}) == 7);
         }
     }
-} // namespace P0011
+} // namespace LeetCode::P0011

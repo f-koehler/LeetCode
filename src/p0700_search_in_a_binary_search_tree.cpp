@@ -2,7 +2,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <memory>
 
-namespace P0700 {
+namespace LeetCode::P0700 {
     class Solution {
       public:
         TreeNode *searchBST(TreeNode *root, int val) {
@@ -57,4 +57,4 @@ namespace P0700 {
             REQUIRE(node2 == nullptr);
         }
     }
-} // namespace P0700
+} // namespace LeetCode::P0700

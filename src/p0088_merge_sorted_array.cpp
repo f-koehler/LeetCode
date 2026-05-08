@@ -1,7 +1,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <vector>
 
-namespace P0088 {
+namespace LeetCode::P0088 {
     class Solution {
       public:
         void merge(std::vector<int> &nums1, int m,
@@ -53,4 +53,4 @@ namespace P0088 {
             REQUIRE(nums1 == std::vector<int>({1}));
         }
     }
-} // namespace P0088
+} // namespace LeetCode::P0088

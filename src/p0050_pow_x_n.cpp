@@ -1,7 +1,7 @@
 #include <catch2/catch_approx.hpp>
 #include <catch2/catch_test_macros.hpp>
 
-namespace P0050 {
+namespace LeetCode::P0050 {
     class Solution {
       public:
         double myPow(double x, int n) {
@@ -38,4 +38,4 @@ namespace P0050 {
             REQUIRE(s.myPow(2.00000, -2) == Catch::Approx(0.25000));
         }
     }
-} // namespace P0050
+} // namespace LeetCode::P0050

@@ -6,7 +6,7 @@
 #include <unordered_map>
 #include <vector>
 
-namespace P0049 {
+namespace LeetCode::P0049 {
     class Solution {
       public:
         using Hash = std::array<uint16_t, 26>;
@@ -139,4 +139,4 @@ namespace P0049 {
             }
         }
     }
-} // namespace P0049
+} // namespace LeetCode::P0049

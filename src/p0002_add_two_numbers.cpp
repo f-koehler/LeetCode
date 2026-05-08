@@ -1,6 +1,6 @@
 #include <catch2/catch_test_macros.hpp>
 
-namespace P0002 {
+namespace LeetCode::P0002 {
     struct ListNode {
         int val;
         ListNode *next;
@@ -84,4 +84,4 @@ namespace P0002 {
             REQUIRE(result->next->next->next->next->next->next->next->val == 1);
         }
     }
-} // namespace P0002
+} // namespace LeetCode::P0002

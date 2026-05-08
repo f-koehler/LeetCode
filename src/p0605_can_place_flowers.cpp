@@ -1,7 +1,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <vector>
 
-namespace P0605 {
+namespace LeetCode::P0605 {
     class Solution {
       public:
         bool canPlaceFlowers(const std::vector<int> &flowerbed, int n) {
@@ -54,4 +54,4 @@ namespace P0605 {
             REQUIRE(!s.canPlaceFlowers(flowerbed, 2));
         }
     }
-} // namespace P0605
+} // namespace LeetCode::P0605

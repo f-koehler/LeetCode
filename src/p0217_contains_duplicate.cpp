@@ -2,7 +2,7 @@
 #include <unordered_set>
 #include <vector>
 
-namespace P0217 {
+namespace LeetCode::P0217 {
     class Solution {
       public:
         [[nodiscard]] bool containsDuplicate(const std::vector<int> &nums) {
@@ -30,4 +30,4 @@ namespace P0217 {
                 Solution().containsDuplicate({1, 1, 1, 3, 3, 4, 3, 2, 4, 2}));
         }
     }
-} // namespace P0217
+} // namespace LeetCode::P0217

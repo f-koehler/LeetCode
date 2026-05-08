@@ -4,7 +4,7 @@
 #include <vector>
 using Catch::Matchers::WithinRel;
 
-namespace P0643 {
+namespace LeetCode::P0643 {
     class Solution {
       public:
         double findMaxAverage(const std::vector<int> &nums, int k) {
@@ -35,4 +35,4 @@ namespace P0643 {
                          WithinRel(5.0, 1e-5));
         }
     }
-} // namespace P0643
+} // namespace LeetCode::P0643

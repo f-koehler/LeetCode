@@ -4,7 +4,7 @@
 #include <ranges>
 #include <set>
 
-namespace P1606 {
+namespace LeetCode::P1606 {
     struct RunningJob {
         int server;
         int stop_time;
@@ -107,4 +107,4 @@ namespace P1606 {
             REQUIRE(result == std::vector<int>{0, 1, 2});
         }
     }
-} // namespace P1606
+} // namespace LeetCode::P1606

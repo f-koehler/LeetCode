@@ -1,7 +1,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <vector>
 
-namespace P0238 {
+namespace LeetCode::P0238 {
     class Solution {
       public:
         std::vector<int> productExceptSelf(const std::vector<int> &nums) {
@@ -37,4 +37,4 @@ namespace P0238 {
                     std::vector<int>{{0, 0, 9, 0, 0}});
         }
     }
-} // namespace P0238
+} // namespace LeetCode::P0238

@@ -1,7 +1,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <vector>
 
-namespace P0042 {
+namespace LeetCode::P0042 {
     class Solution {
       public:
         int trap(const std::vector<int> &height) {
@@ -66,4 +66,4 @@ namespace P0042 {
             REQUIRE(solution.trap({0, 1, 0}) == 0);
         }
     }
-} // namespace P0042
+} // namespace LeetCode::P0042

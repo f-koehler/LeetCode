@@ -3,7 +3,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <vector>
 
-namespace P0923 {
+namespace LeetCode::P0923 {
     static constexpr std::size_t Modulo = 1'000'000'007;
 
     class Solution {
@@ -73,4 +73,4 @@ namespace P0923 {
             REQUIRE(s.threeSumMulti({2, 1, 3}, 6) == 1);
         }
     }
-} // namespace P0923
+} // namespace LeetCode::P0923

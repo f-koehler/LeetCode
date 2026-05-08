@@ -2,7 +2,7 @@
 #include <cmath>
 #include <vector>
 
-namespace P0374 {
+namespace LeetCode::P0374 {
 
     // volatile is important to prevent inlining of the guess function
     thread_local static volatile int pick = 6;
@@ -79,4 +79,4 @@ namespace P0374 {
             REQUIRE(s.guessNumber(2) == 1);
         }
     }
-} // namespace P0374
+} // namespace LeetCode::P0374

@@ -3,7 +3,7 @@
 #include <unordered_map>
 #include <vector>
 
-namespace P0380 {
+namespace LeetCode::P0380 {
     static constexpr std::size_t AllocationSize = 300'000;
 
     class RandomizedSet {
@@ -113,4 +113,4 @@ namespace P0380 {
             }
         }
     }
-} // namespace P0380
+} // namespace LeetCode::P0380

@@ -2,7 +2,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <string>
 
-namespace P0242 {
+namespace LeetCode::P0242 {
     class Solution {
       public:
         [[nodiscard]] bool isAnagram(const std::string &s,
@@ -40,4 +40,4 @@ namespace P0242 {
             REQUIRE(!s.isAnagram("ab", "a"));
         }
     }
-} // namespace P0242
+} // namespace LeetCode::P0242

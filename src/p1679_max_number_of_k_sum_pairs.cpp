@@ -4,7 +4,7 @@
 #include <unordered_map>
 #include <vector>
 
-namespace P1679 {
+namespace LeetCode::P1679 {
     class Solution {
       public:
         int maxOperations(const std::vector<int> &nums, int k) {
@@ -73,4 +73,4 @@ namespace P1679 {
             REQUIRE(s.maxOperations2(nums, 6) == 1);
         }
     }
-} // namespace P1679
+} // namespace LeetCode::P1679

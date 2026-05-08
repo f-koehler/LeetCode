@@ -1,7 +1,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <vector>
 
-namespace P0169 {
+namespace LeetCode::P0169 {
     class Solution {
       public:
         int majorityElement(const std::vector<int> &nums) {
@@ -36,4 +36,4 @@ namespace P0169 {
             REQUIRE(s.majorityElement({2, 2, 1, 1, 1, 2, 2}) == 2);
         }
     }
-} // namespace P0169
+} // namespace LeetCode::P0169

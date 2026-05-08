@@ -3,7 +3,7 @@
 #include <unordered_map>
 #include <vector>
 
-namespace P0954 {
+namespace LeetCode::P0954 {
     class Solution {
       public:
         bool canReorderDoubled(const std::vector<int> &arr) {
@@ -73,4 +73,4 @@ namespace P0954 {
             REQUIRE(s.canReorderDoubled(input));
         }
     }
-} // namespace P0954
+} // namespace LeetCode::P0954

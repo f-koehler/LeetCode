@@ -1,7 +1,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <vector>
 
-namespace P0054 {
+namespace LeetCode::P0054 {
     class Solution {
       public:
         std::vector<int>
@@ -75,4 +75,4 @@ namespace P0054 {
             REQUIRE(output == expected);
         }
     }
-} // namespace P0054
+} // namespace LeetCode::P0054

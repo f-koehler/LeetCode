@@ -4,7 +4,7 @@
 #include <cstdint>
 #include <vector>
 
-namespace P1010 {
+namespace LeetCode::P1010 {
     class Solution {
       public:
         int numPairsDivisibleBy60(std::vector<int> &time) {
@@ -65,4 +65,4 @@ namespace P1010 {
             REQUIRE(s.numPairsDivisibleBy60(input) == 3);
         }
     }
-} // namespace P1010
+} // namespace LeetCode::P1010

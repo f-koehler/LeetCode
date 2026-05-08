@@ -1,7 +1,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <string>
 
-namespace P2390 {
+namespace LeetCode::P2390 {
     class Solution {
       public:
         std::string removeStars(const std::string &s) {
@@ -37,4 +37,4 @@ namespace P2390 {
             REQUIRE(s.removeStars("erase*****") == "");
         }
     }
-} // namespace P2390
+} // namespace LeetCode::P2390

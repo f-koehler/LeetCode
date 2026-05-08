@@ -3,7 +3,7 @@
 #include <queue>
 #include <vector>
 
-namespace P1424 {
+namespace LeetCode::P1424 {
 
     struct Position {
         std::size_t row;
@@ -88,4 +88,4 @@ namespace P1424 {
                                                5, 13, 11, 14, 15, 16});
         }
     }
-} // namespace P1424
+} // namespace LeetCode::P1424

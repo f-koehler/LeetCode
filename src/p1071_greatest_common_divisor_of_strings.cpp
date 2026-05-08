@@ -2,7 +2,7 @@
 #include <numeric>
 #include <string>
 
-namespace P1071 {
+namespace LeetCode::P1071 {
     // Euclidean algorithm to compute gcd.
     template <typename T>
     T gcd(T a, T b) {
@@ -62,4 +62,4 @@ namespace P1071 {
             REQUIRE(s.gcdOfStringsCustomGCD("LEET", "CODE") == "");
         }
     }
-} // namespace P1071
+} // namespace LeetCode::P1071

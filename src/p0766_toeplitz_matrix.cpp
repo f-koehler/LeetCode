@@ -1,7 +1,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <vector>
 
-namespace P0766 {
+namespace LeetCode::P0766 {
     class Solution {
       public:
         bool isToeplitzMatrix(const std::vector<std::vector<int>> &matrix) {
@@ -35,4 +35,4 @@ namespace P0766 {
             REQUIRE(!s.isToeplitzMatrix({{1, 2}, {2, 2}}));
         }
     }
-} // namespace P0766
+} // namespace LeetCode::P0766

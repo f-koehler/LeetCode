@@ -1,7 +1,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <vector>
 
-namespace P0198 {
+namespace LeetCode::P0198 {
     class Solution {
       public:
         int rob(const std::vector<int> &nums) {
@@ -45,4 +45,4 @@ namespace P0198 {
             REQUIRE(s.rob({2, 1, 1, 2}) == 4);
         }
     }
-} // namespace P0198
+} // namespace LeetCode::P0198

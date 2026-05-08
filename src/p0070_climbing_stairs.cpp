@@ -1,7 +1,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <vector>
 
-namespace P0070 {
+namespace LeetCode::P0070 {
     class Solution {
       public:
         int climbStairs(int n) {
@@ -33,4 +33,4 @@ namespace P0070 {
             REQUIRE(s.climbStairs(3) == 3);
         }
     }
-} // namespace P0070
+} // namespace LeetCode::P0070

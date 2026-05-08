@@ -1,7 +1,7 @@
 #include "tree.hpp"
 #include <catch2/catch_test_macros.hpp>
 
-namespace P0450 {
+namespace LeetCode::P0450 {
     class Solution {
       public:
         TreeNode *deleteNode(TreeNode *root, int key) {
@@ -86,4 +86,4 @@ namespace P0450 {
             REQUIRE(s.deleteNode(nullptr, 0) == nullptr);
         }
     }
-} // namespace P0450
+} // namespace LeetCode::P0450

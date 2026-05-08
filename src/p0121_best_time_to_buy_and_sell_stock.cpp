@@ -2,7 +2,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <vector>
 
-namespace P0121 {
+namespace LeetCode::P0121 {
     class Solution {
       public:
         int maxProfit(const std::vector<int> &prices) {
@@ -33,4 +33,4 @@ namespace P0121 {
             REQUIRE(s.maxProfit({7, 6, 4, 3, 1}) == 0);
         }
     }
-} // namespace P0121
+} // namespace LeetCode::P0121

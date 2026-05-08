@@ -1,6 +1,6 @@
 #include <catch2/catch_test_macros.hpp>
 
-namespace P0069 {
+namespace LeetCode::P0069 {
     class Solution {
       public:
         inline constexpr int mySqrt(int x) {
@@ -51,4 +51,4 @@ namespace P0069 {
             REQUIRE(s.mySqrt(3) == 1);
         }
     }
-} // namespace P0069
+} // namespace LeetCode::P0069

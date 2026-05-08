@@ -8,7 +8,7 @@
 #include <queue>
 #include <vector>
 
-namespace P0295 {
+namespace LeetCode::P0295 {
     class MedianFinder {
       private:
         // min heap to hold the larger half of elements encountered thus far ->
@@ -91,4 +91,4 @@ namespace P0295 {
                          Catch::Matchers::WithinULP(-3.0, 1));
         }
     }
-} // namespace P0295
+} // namespace LeetCode::P0295

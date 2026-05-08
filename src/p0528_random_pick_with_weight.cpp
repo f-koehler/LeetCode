@@ -5,7 +5,7 @@
 #include <numeric>
 #include <random>
 
-namespace P0528 {
+namespace LeetCode::P0528 {
     class Solution {
       private:
         std::vector<int64_t> m_partial_sum;
@@ -56,4 +56,4 @@ namespace P0528 {
                              static_cast<double>(count[0] + count[1]) -
                          0.25) < 0.01);
     }
-} // namespace P0528
+} // namespace LeetCode::P0528

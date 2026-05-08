@@ -2,7 +2,7 @@
 #include <list>
 #include <unordered_map>
 
-namespace P0146 {
+namespace LeetCode::P0146 {
     struct Entry {
         int key;
         int value;
@@ -75,4 +75,4 @@ namespace P0146 {
         REQUIRE(cache.get(3) == 3);
         REQUIRE(cache.get(4) == 4);
     }
-} // namespace P0146
+} // namespace LeetCode::P0146

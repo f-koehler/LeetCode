@@ -2,7 +2,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <deque>
 
-namespace P0872 {
+namespace LeetCode::P0872 {
     class Solution {
       public:
         bool leafSimilar(const TreeNode *root1, const TreeNode *root2) {
@@ -50,4 +50,4 @@ namespace P0872 {
             REQUIRE(!s.leafSimilar(tree1.get_root(), tree2.get_root()));
         }
     }
-} // namespace P0872
+} // namespace LeetCode::P0872

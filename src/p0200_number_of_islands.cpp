@@ -3,7 +3,7 @@
 #include <queue>
 #include <stack>
 
-namespace P0200 {
+namespace LeetCode::P0200 {
     class Solution {
       public:
         int numIslandsBFS(std::vector<std::vector<char>> &grid) {
@@ -170,4 +170,4 @@ namespace P0200 {
             }
         }
     }
-} // namespace P0200
+} // namespace LeetCode::P0200

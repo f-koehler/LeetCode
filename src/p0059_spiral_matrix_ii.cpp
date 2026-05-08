@@ -1,7 +1,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <vector>
 
-namespace P0059 {
+namespace LeetCode::P0059 {
     class Solution {
       public:
         std::vector<std::vector<int>> generateMatrix(int n) {
@@ -59,4 +59,4 @@ namespace P0059 {
             REQUIRE(output == std::vector<std::vector<int>>{{1}});
         }
     }
-} // namespace P0059
+} // namespace LeetCode::P0059

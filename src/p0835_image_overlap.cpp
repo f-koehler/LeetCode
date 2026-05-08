@@ -3,7 +3,7 @@
 #include <unordered_map>
 #include <vector>
 
-namespace P0835 {
+namespace LeetCode::P0835 {
     struct Vector {
         int x;
         int y;
@@ -100,4 +100,4 @@ namespace P0835 {
             REQUIRE(s.largestOverlap({{0}}, {{0}}) == 0);
         }
     }
-} // namespace P0835
+} // namespace LeetCode::P0835

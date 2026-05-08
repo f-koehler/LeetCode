@@ -1,7 +1,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <deque>
 
-namespace P0155 {
+namespace LeetCode::P0155 {
     class MinStack {
 
         /**
@@ -67,4 +67,4 @@ namespace P0155 {
         REQUIRE(stack.top() == 0);
         REQUIRE(stack.getMin() == -2);
     }
-} // namespace P0155
+} // namespace LeetCode::P0155

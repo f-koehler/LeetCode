@@ -3,7 +3,7 @@
 #include <ranges>
 #include <vector>
 
-namespace P0645 {
+namespace LeetCode::P0645 {
     class Solution {
       public:
         std::vector<int> findErrorNums(const std::vector<int> &nums) {
@@ -45,4 +45,4 @@ namespace P0645 {
             REQUIRE(result == std::vector<int>{1, 2});
         }
     }
-} // namespace P0645
+} // namespace LeetCode::P0645

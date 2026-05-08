@@ -1,7 +1,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <vector>
 
-namespace P0746 {
+namespace LeetCode::P0746 {
     class Solution {
       public:
         int minCostClimbingStairs(std::vector<int> &cost) {
@@ -25,4 +25,4 @@ namespace P0746 {
             REQUIRE(s.minCostClimbingStairs(cost) == 6);
         }
     }
-} // namespace P0746
+} // namespace LeetCode::P0746

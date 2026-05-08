@@ -7,7 +7,7 @@
 #include <sstream>
 #include <thread>
 
-namespace P1116 {
+namespace LeetCode::P1116 {
     std::ostringstream strm;
 
     void printNumber(int number) { strm << number; }
@@ -137,4 +137,4 @@ namespace P1116 {
             REQUIRE(strm.str() == "0102030405");
         }
     }
-} // namespace P1116
+} // namespace LeetCode::P1116

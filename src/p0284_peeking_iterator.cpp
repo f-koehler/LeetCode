@@ -1,7 +1,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <vector>
 
-namespace P0284 {
+namespace LeetCode::P0284 {
     /*
      * Below is the interface for Iterator, which is already defined for you.
      * **DO NOT** modify the interface for Iterator.
@@ -77,4 +77,4 @@ namespace P0284 {
         REQUIRE(iter.next() == 3);
         REQUIRE(!iter.hasNext());
     }
-} // namespace P0284
+} // namespace LeetCode::P0284

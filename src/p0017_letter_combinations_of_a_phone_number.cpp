@@ -6,7 +6,7 @@
 #include <string_view>
 #include <vector>
 
-namespace P0017 {
+namespace LeetCode::P0017 {
     class Solution {
       private:
         static constexpr std::array<std::string_view, 10> LettersForNumber = {
@@ -94,4 +94,4 @@ namespace P0017 {
         }
     }
 
-} // namespace P0017
+} // namespace LeetCode::P0017

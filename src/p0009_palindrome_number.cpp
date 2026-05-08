@@ -1,6 +1,6 @@
 #include <catch2/catch_test_macros.hpp>
 
-namespace P0009 {
+namespace LeetCode::P0009 {
     class Solution {
       public:
         bool isPalindrome(int x) {
@@ -53,4 +53,4 @@ namespace P0009 {
         // cppcheck-suppress knownConditionTrueFalse
         REQUIRE(Solution().isPalindrome(10) == false);
     }
-} // namespace P0009
+} // namespace LeetCode::P0009

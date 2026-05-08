@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 
-namespace P2131 {
+namespace LeetCode::P2131 {
     class Solution {
       public:
         int longestPalindrome(const std::vector<std::string> &words) {
@@ -80,4 +80,4 @@ namespace P2131 {
             REQUIRE(s.longestPalindrome({"cc", "ll", "xx"}) == 2);
         }
     }
-} // namespace P2131
+} // namespace LeetCode::P2131

@@ -3,7 +3,7 @@
 #include <cstdint>
 #include <deque>
 
-namespace P1137 {
+namespace LeetCode::P1137 {
     /*
      * There is also the idea of a constant time solution using a Binet-style
      * formula. Unfortunately, the relevant constants (eigenvalues of the matrix
@@ -58,4 +58,4 @@ namespace P1137 {
             REQUIRE(s.tribonacciNoCache(25) == 1389537);
         }
     }
-} // namespace P1137
+} // namespace LeetCode::P1137

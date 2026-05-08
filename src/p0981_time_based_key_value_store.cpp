@@ -4,7 +4,7 @@
 #include <unordered_map>
 #include <vector>
 
-namespace P0981 {
+namespace LeetCode::P0981 {
     class TimeMap {
       public:
         struct Value {
@@ -66,4 +66,4 @@ namespace P0981 {
         REQUIRE(map.get("foo", 4) == "bar2");
         REQUIRE(map.get("foo", 5) == "bar2");
     }
-} // namespace P0981
+} // namespace LeetCode::P0981

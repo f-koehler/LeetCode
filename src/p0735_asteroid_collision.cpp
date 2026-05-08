@@ -1,7 +1,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <vector>
 
-namespace P0735 {
+namespace LeetCode::P0735 {
     class Solution {
       public:
         std::vector<int> asteroidCollision(const std::vector<int> &asteroids) {
@@ -67,4 +67,4 @@ namespace P0735 {
                     std::vector<int>{10});
         }
     }
-} // namespace P0735
+} // namespace LeetCode::P0735

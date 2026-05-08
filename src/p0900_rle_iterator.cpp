@@ -1,7 +1,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <vector>
 
-namespace P0900 {
+namespace LeetCode::P0900 {
     class RLEIterator {
       private:
         std::vector<int> m_encoding;
@@ -42,4 +42,4 @@ namespace P0900 {
         REQUIRE(iter.next(1) == 5);
         REQUIRE(iter.next(2) == -1);
     }
-} // namespace P0900
+} // namespace LeetCode::P0900

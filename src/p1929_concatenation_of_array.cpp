@@ -3,7 +3,7 @@
 #include <vector>
 using namespace std;
 
-namespace P1929 {
+namespace LeetCode::P1929 {
     class Solution {
       public:
         vector<int> getConcatenation(vector<int> &nums) {
@@ -27,4 +27,4 @@ namespace P1929 {
             REQUIRE(s.getConcatenation(nums) == ans);
         }
     }
-} // namespace P1929
+} // namespace LeetCode::P1929

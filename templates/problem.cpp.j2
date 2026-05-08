@@ -1,6 +1,6 @@
 #include <catch2/catch_test_macros.hpp>
 
-namespace P{{ problem.id | string |zfill(4) }} {
+namespace LeetCode::P{{ problem.id | string |zfill(4) }} {
     {{ problem.code_snippets["cpp"] }}
 
     TEST_CASE("{{ problem.id | string | zfill(4) }} - {{ problem.title }}", "{% for tag in problem.tags %}[{{tag}}]{% endfor %}") {
@@ -12,4 +12,4 @@ namespace P{{ problem.id | string |zfill(4) }} {
         }
         {% endfor %}
     }
-} // namespace P{{ problem.id | string | zfill(4) }}
+} // namespace LeetCode::P{{ problem.id | string | zfill(4) }}

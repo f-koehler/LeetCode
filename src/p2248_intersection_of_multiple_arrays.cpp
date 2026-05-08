@@ -2,7 +2,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <vector>
 
-namespace P2248 {
+namespace LeetCode::P2248 {
     class Solution {
       public:
         std::vector<int>
@@ -48,4 +48,4 @@ namespace P2248 {
                     std::vector<int>{});
         }
     }
-} // namespace P2248
+} // namespace LeetCode::P2248

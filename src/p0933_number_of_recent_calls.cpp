@@ -1,7 +1,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <deque>
 
-namespace P0933 {
+namespace LeetCode::P0933 {
     class RecentCounter {
       private:
         std::deque<int> m_recents;
@@ -27,4 +27,4 @@ namespace P0933 {
             REQUIRE(counter.ping(3002) == 3);
         }
     }
-} // namespace P0933
+} // namespace LeetCode::P0933

@@ -6,7 +6,7 @@
 #include <sstream>
 #include <thread>
 
-namespace P1115 {
+namespace LeetCode::P1115 {
     std::ostringstream strm;
     void printFoo() { strm << "foo"; }
     void printBar() { strm << "bar"; }
@@ -96,4 +96,4 @@ namespace P1115 {
             REQUIRE(strm.str() == "foobarfoobar");
         }
     }
-} // namespace P1115
+} // namespace LeetCode::P1115

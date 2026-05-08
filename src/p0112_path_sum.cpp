@@ -3,7 +3,7 @@
 #include <stack>
 #include <utility>
 
-namespace P0112 {
+namespace LeetCode::P0112 {
     class Solution {
       public:
         bool hasPathSum(TreeNode *root, int targetSum) {
@@ -76,4 +76,4 @@ namespace P0112 {
             REQUIRE(!s.hasPathSumIterative(nullptr, 0));
         }
     }
-} // namespace P0112
+} // namespace LeetCode::P0112

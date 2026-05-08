@@ -2,7 +2,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <vector>
 
-namespace P1248 {
+namespace LeetCode::P1248 {
     class Solution {
       public:
         int numberOfSubarrays(const std::vector<int> &nums, int k) {
@@ -63,4 +63,4 @@ namespace P1248 {
                     16);
         }
     }
-} // namespace P1248
+} // namespace LeetCode::P1248

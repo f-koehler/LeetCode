@@ -3,7 +3,7 @@
 #include <utility>
 #include <vector>
 
-namespace P0048 {
+namespace LeetCode::P0048 {
     class Solution {
       public:
         void rotate(std::vector<std::vector<int>> &matrix) {
@@ -54,4 +54,4 @@ namespace P0048 {
                                                             {16, 7, 10, 11}});
         }
     }
-} // namespace P0048
+} // namespace LeetCode::P0048

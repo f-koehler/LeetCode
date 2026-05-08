@@ -4,7 +4,7 @@
 #include <ranges>
 #include <string>
 
-namespace P0125 {
+namespace LeetCode::P0125 {
     class Solution {
       public:
         [[nodiscard]] std::string sanitize(std::string s) const {
@@ -80,4 +80,4 @@ namespace P0125 {
             REQUIRE(s.isPalindrome(" "));
         }
     }
-} // namespace P0125
+} // namespace LeetCode::P0125

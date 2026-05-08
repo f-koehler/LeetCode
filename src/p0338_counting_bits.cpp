@@ -1,7 +1,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <vector>
 
-namespace P0338 {
+namespace LeetCode::P0338 {
     class Solution {
       public:
         std::vector<int> countBits(int n) {
@@ -34,4 +34,4 @@ namespace P0338 {
             REQUIRE(s.countBits(5) == std::vector<int>{0, 1, 1, 2, 1, 2});
         }
     }
-} // namespace P0338
+} // namespace LeetCode::P0338

@@ -2,7 +2,7 @@
 #include <deque>
 #include <vector>
 
-namespace P0341 {
+namespace LeetCode::P0341 {
     /**
      * // This is the interface that allows for creating nested lists.
      * // You should not implement it, or speculate about its implementation
@@ -124,4 +124,4 @@ namespace P0341 {
             REQUIRE(!iter.hasNext());
         }
     }
-} // namespace P0341
+} // namespace LeetCode::P0341

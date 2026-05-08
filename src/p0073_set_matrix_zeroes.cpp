@@ -2,7 +2,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <vector>
 
-namespace P0073 {
+namespace LeetCode::P0073 {
     class Solution {
       public:
         void setZeroes(std::vector<std::vector<int>> &matrix) {
@@ -95,4 +95,4 @@ namespace P0073 {
             REQUIRE(matrix == expected);
         }
     }
-} // namespace P0073
+} // namespace LeetCode::P0073

@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-namespace P0118 {
+namespace LeetCode::P0118 {
     class Solution {
       public:
         vector<vector<int>> generate(int numRows) {
@@ -37,4 +37,4 @@ namespace P0118 {
             REQUIRE(result == vector<vector<int>>({{1}}));
         }
     }
-} // namespace P0118
+} // namespace LeetCode::P0118

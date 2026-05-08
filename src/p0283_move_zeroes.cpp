@@ -2,7 +2,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <vector>
 
-namespace P0283 {
+namespace LeetCode::P0283 {
     class Solution {
       public:
         void moveZeroes(std::vector<int> &nums) {
@@ -41,4 +41,4 @@ namespace P0283 {
             REQUIRE(input == std::vector<int>{1});
         }
     }
-} // namespace P0283
+} // namespace LeetCode::P0283

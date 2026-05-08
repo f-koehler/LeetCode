@@ -2,7 +2,7 @@
 #include <tuple>
 #include <utility>
 
-namespace P0143 {
+namespace LeetCode::P0143 {
     struct ListNode {
         int val;
         ListNode *next;
@@ -262,4 +262,4 @@ namespace P0143 {
             delete node1;
         }
     }
-} // namespace P0143
+} // namespace LeetCode::P0143

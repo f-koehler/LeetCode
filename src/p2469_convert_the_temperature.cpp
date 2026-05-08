@@ -3,7 +3,7 @@
 #include <vector>
 using namespace std;
 
-namespace P2469 {
+namespace LeetCode::P2469 {
     class Solution {
       public:
         vector<double> convertTemperature(double celsius) {
@@ -24,4 +24,4 @@ namespace P2469 {
             REQUIRE(result[1] == Catch::Approx(251.798));
         }
     }
-} // namespace P2469
+} // namespace LeetCode::P2469

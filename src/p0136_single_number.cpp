@@ -3,7 +3,7 @@
 #include <numeric>
 #include <vector>
 
-namespace P0136 {
+namespace LeetCode::P0136 {
     class Solution {
       public:
         int singleNumber(const std::vector<int> &nums) {
@@ -30,4 +30,4 @@ namespace P0136 {
             REQUIRE(s.singleNumber(std::vector<int>{1}) == 1);
         }
     }
-} // namespace P0136
+} // namespace LeetCode::P0136

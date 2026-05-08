@@ -1,7 +1,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <vector>
 
-namespace P1493 {
+namespace LeetCode::P1493 {
     class Solution {
       public:
         int longestSubarray(const std::vector<int> &nums) {
@@ -60,4 +60,4 @@ namespace P1493 {
             REQUIRE(s.longestSubarray({1, 1, 1}) == 2);
         }
     }
-} // namespace P1493
+} // namespace LeetCode::P1493

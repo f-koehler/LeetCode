@@ -2,7 +2,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <vector>
 
-namespace P1732 {
+namespace LeetCode::P1732 {
     class Solution {
       public:
         int largestAltitude(const std::vector<int> &gain) {
@@ -26,4 +26,4 @@ namespace P1732 {
                         std::vector<int>{-4, -3, -2, -1, 4, 3, 2}) == 0);
         }
     }
-} // namespace P1732
+} // namespace LeetCode::P1732

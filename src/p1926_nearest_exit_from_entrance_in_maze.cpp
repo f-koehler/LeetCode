@@ -4,7 +4,7 @@
 #include <tuple>
 #include <vector>
 
-namespace P1926 {
+namespace LeetCode::P1926 {
     struct Position {
         int row;
         int col;
@@ -91,4 +91,4 @@ namespace P1926 {
             REQUIRE(s.nearestExit({{'.', '+'}}, {0, 0}) == -1);
         }
     }
-} // namespace P1926
+} // namespace LeetCode::P1926

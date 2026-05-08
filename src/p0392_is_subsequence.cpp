@@ -4,7 +4,7 @@
 #include <string>
 #include <unordered_map>
 
-namespace P0392 {
+namespace LeetCode::P0392 {
     /*
      * This class is for the follow-up question, i.e. how to handle a lot of
      * checks against a single t. The idea is to build a lookup table of
@@ -102,4 +102,4 @@ namespace P0392 {
             REQUIRE(!IsSubsequenceCache("ahbgdc")("axc"));
         }
     }
-} // namespace P0392
+} // namespace LeetCode::P0392

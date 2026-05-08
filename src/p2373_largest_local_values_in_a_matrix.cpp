@@ -1,7 +1,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <vector>
 
-namespace P2373 {
+namespace LeetCode::P2373 {
     class Solution {
       public:
         std::vector<std::vector<int>>
@@ -61,4 +61,4 @@ namespace P2373 {
                                   {2, 2, 2}, {2, 2, 2}, {2, 2, 2}});
         }
     }
-} // namespace P2373
+} // namespace LeetCode::P2373

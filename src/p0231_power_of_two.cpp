@@ -1,7 +1,7 @@
 #include <bit>
 #include <catch2/catch_test_macros.hpp>
 
-namespace P0231 {
+namespace LeetCode::P0231 {
     class Solution {
       public:
         constexpr bool isPowerOfTwo(int n) {
@@ -40,4 +40,4 @@ namespace P0231 {
             REQUIRE(!s.isPowerOfTwoPopcount(3));
         }
     }
-} // namespace P0231
+} // namespace LeetCode::P0231
