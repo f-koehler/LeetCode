@@ -9,7 +9,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Wpedantic")
 
-include(sources.cmake)
+file(GLOB LEET_CODE_SOURCES src/p*.cpp)
 add_executable(LeetCode main.cpp util/tree.cpp ${LEET_CODE_SOURCES})
 target_link_libraries(LeetCode PRIVATE Catch2::Catch2WithMain)
 target_include_directories(LeetCode PRIVATE util)
