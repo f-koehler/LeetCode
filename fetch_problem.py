@@ -1,6 +1,7 @@
 #!/usr/bin/env -S uv run
 import typer
-from typing import Annotated
+from typing import Annotated, Optional
+from enum import Enum
 import requests
 import datetime
 from cachier import cachier
@@ -10,6 +11,20 @@ import html
 import jinja2
 from pathlib import Path
 from bs4 import BeautifulSoup
+
+
+class Language(str, Enum):
+    rust = "rust"
+    python = "python"
+    cpp = "cpp"
+    cxx = "c++"
+
+    @classmethod
+    def normalize(cls, lang: "Language") -> "Language":
+        """Normalize aliases to their canonical form."""
+        if lang == cls.cxx:
+            return cls.cpp
+        return lang
 
 
 @dataclass
@@ -132,7 +147,19 @@ def zfill_filter(text: str, length: int) -> str:
     return text.zfill(length)
 
 
-def main(id: Annotated[int, typer.Argument()]):
+def main(
+    id: Annotated[int, typer.Argument()],
+    lang: Annotated[
+        Optional[list[Language]],
+        typer.Option("--lang", "-l", help="Languages to generate templates for."),
+    ] = None,
+):
+    if lang is None:
+        lang = [Language.cpp]
+
+    # Normalize aliases (e.g. c++ -> cpp)
+    languages = {Language.normalize(l) for l in lang}
+
     # remove paid problems
     problem_entries: list[ProblemEntry] = [
         ProblemEntry.from_json(problem)
@@ -153,35 +180,30 @@ def main(id: Annotated[int, typer.Argument()]):
     )
 
     # generate template for rust solution
-    rust_path = Path("src") / f"{file_stem}.rs"
-    if not rust_path.exists():
-        rust_path.write_text(env.get_template("problem.rs.j2").render(problem=problem))
+    if Language.rust in languages:
+        rust_path = Path("src") / f"{file_stem}.rs"
+        if not rust_path.exists():
+            rust_path.write_text(env.get_template("problem.rs.j2").render(problem=problem))
 
-    env.get_template("lib.rs.j2").stream(
-        rust_modules=[
-            file.stem
-            for file in Path("src").iterdir()
-            if file.is_file() and file.suffix == ".rs" and file.stem.startswith("p")
-        ]
-    ).dump("src/lib.rs")
+        env.get_template("lib.rs.j2").stream(
+            rust_modules=[
+                file.stem
+                for file in Path("src").iterdir()
+                if file.is_file() and file.suffix == ".rs" and file.stem.startswith("p")
+            ]
+        ).dump("src/lib.rs")
 
     # generate template for the C++ solution
-    cpp_path = Path("src") / f"{file_stem}.cpp"
-    if not cpp_path.exists():
-        cpp_path.write_text(env.get_template("problem.cpp.j2").render(problem=problem))
-
-    env.get_template("sources.cmake.j2").stream(
-        cpp_sources=[
-            file.stem
-            for file in Path("src").iterdir()
-            if file.is_file() and file.suffix == ".cpp" and file.stem.startswith("p")
-        ]
-    ).dump("sources.cmake")
+    if Language.cpp in languages:
+        cpp_path = Path("src") / f"{file_stem}.cpp"
+        if not cpp_path.exists():
+            cpp_path.write_text(env.get_template("problem.cpp.j2").render(problem=problem))
 
     # generate template for the Python solution
-    py_path = Path("src") / f"{file_stem}.py"
-    if not py_path.exists():
-        py_path.write_text(env.get_template("problem.py.j2").render(problem=problem))
+    if Language.python in languages:
+        py_path = Path("src") / f"{file_stem}.py"
+        if not py_path.exists():
+            py_path.write_text(env.get_template("problem.py.j2").render(problem=problem))
 
 
 if __name__ == "__main__":
