@@ -23,35 +23,6 @@
 
     in
     {
-      checks = forEachSystem (system: {
-        pre-commit-check = inputs.git-hooks.lib.${system}.run {
-          src = ./.;
-          hooks = {
-            # nix
-            deadnix.enable = true;
-            flake-checker.enable = true;
-            nil.enable = true;
-            nixfmt-rfc-style.enable = true;
-            statix.enable = true;
-
-            # python
-            ruff.enable = true;
-            ruff-format.enable = true;
-
-            # rust
-            cargo-check.enable = true;
-            clippy.enable = true;
-            rustfmt.enable = true;
-
-            # toml
-            taplo.enable = true;
-
-            # c++
-            clang-format.enable = true;
-            cmake-format.enable = true;
-          };
-        };
-      });
       formatter = forEachSystem (
         system:
         let
